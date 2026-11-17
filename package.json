@@ -1,0 +1,19 @@
+{
+  "name": "goed-properties-clone",
+  "version": "1.0.0",
+  "description": "High-fidelity responsive clone of Goed Properties (https://www.goedproperties.in/)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "real-estate",
+    "goed-properties",
+    "chennai",
+    "clone",
+    "tailwind"
+  ],
+  "author": "",
+  "license": "ISC"
+}

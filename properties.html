@@ -1,0 +1,1107 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="lenis-smooth">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KBH658HC');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Listings | Goed Properties - Residential Plots, Farmland & Houses</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/icons/header-logo.svg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="
+        param($m)
+        $sub = $m.Groups[1].Value
+        if ([string]::IsNullOrWhiteSpace($sub)) {
+            return "index.html"
+        } else {
+            return "$sub.html"
+        }
+    ">
+    <meta name="robots" content="index, follow">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Explore featured residential properties, DTCP and CMDA approved layouts, apartments, villas, and farmlands by Goed Properties in Chennai.">
+    <meta name="keywords" content="Chennai real estate listings, DTCP approved plots, CMDA plots, independent houses Chennai, villas, farmland">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Featured Listings | Goed Properties - Residential Plots, Farmland & Houses">
+    <meta property="og:description" content="Explore featured residential properties, DTCP and CMDA approved layouts, apartments, villas, and farmlands by Goed Properties in Chennai.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&h=630&q=80">
+    <meta property="og:url" content="
+        param($m)
+        $sub = $m.Groups[1].Value
+        if ([string]::IsNullOrWhiteSpace($sub)) {
+            return "index.html"
+        } else {
+            return "$sub.html"
+        }
+    ">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Featured Listings | Goed Properties - Residential Plots, Farmland & Houses">
+    <meta name="twitter:description" content="Explore featured residential properties, DTCP and CMDA approved layouts, apartments, villas, and farmlands by Goed Properties in Chennai.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&h=630&q=80">
+
+    <!-- Stylesheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    
+    <!-- Custom Style Assets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+
+    <!-- Tailwind Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brandRed: '#C8102E',
+              brandRedDark: '#A30B22',
+              luxuryGold: '#C8102E',
+              richGold: '#C8102E',
+              luxuryDark: '#111827',
+              luxurySlate: '#F8FAFC',
+              luxuryGray: '#64748B',
+              luxuryBorder: '#E5E7EB',
+            },
+            fontFamily: {
+              playfair: ['"Playfair Display"', 'serif'],
+              inter: ['Inter', 'sans-serif'],
+            },
+            borderRadius: {
+              'luxury': '20px',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+        .properties-hero {
+            background-image: linear-gradient(90deg, rgba(17, 24, 39, .94) 0%, rgba(17, 24, 39, .76) 52%, rgba(17, 24, 39, .4) 100%);
+        }
+
+        .property-card-item {
+            border-radius: 1.25rem;
+            box-shadow: 0 10px 35px -24px rgba(17, 24, 39, .45);
+            transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+        }
+
+        .property-card-item:hover {
+            transform: translateY(-6px);
+            border-color: rgba(200, 16, 46, .3);
+            box-shadow: 0 24px 50px -28px rgba(17, 24, 39, .45);
+        }
+
+        .property-card-item > .zoom-img-container {
+            height: 15rem;
+            background: linear-gradient(145deg, #fff, #f1f5f9);
+        }
+
+        .property-card-item > .zoom-img-container img {
+            object-fit: cover;
+            padding: 0;
+        }
+
+        .property-card-item > div:nth-child(2) {
+            padding: 1.5rem;
+        }
+
+        #prop-filter-tabs .filter-btn {
+            border-radius: 9999px;
+            box-shadow: 0 3px 12px -8px rgba(17, 24, 39, .4);
+        }
+
+        @media (max-width: 639px) {
+            .property-card-item > .zoom-img-container {
+                height: 13rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-luxurySlate text-luxuryDark font-inter antialiased">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBH658HC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Preloader Screen -->
+    <div id="preloader">
+        <div class="flex flex-col items-center space-y-4">
+            <div class="loader-ring" aria-label="Loading Goed Properties"></div>
+            <span class="text-brand-gradient font-playfair tracking-widest text-xs uppercase font-semibold">Goed Properties</span>
+        </div>
+    </div>
+
+    <!-- Header / Navbar Element -->
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-transparent py-4 px-6 md:px-12 border-b border-transparent">
+        <div id="header-placeholder"></div>
+    </header>
+
+    <main class="pt-24">
+        <!-- Properties Hero Banner -->
+        <section class="relative flex min-h-[430px] items-center overflow-hidden bg-luxuryDark text-white md:min-h-[500px]">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1800&q=85" alt="Exclusive contemporary villa" class="absolute inset-0 h-full w-full object-cover object-center">
+            <div class="properties-hero absolute inset-0"></div>
+            <div class="absolute -right-24 -top-28 h-96 w-96 rounded-full border border-white/10" aria-hidden="true"></div>
+            <div class="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-10 px-6 py-20 md:px-12 lg:grid-cols-[1.2fr_.8fr]">
+                <div class="max-w-3xl" data-aos="fade-up">
+                    <span class="theme-badge theme-badge-dark inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brandRed/20 border border-white/20 text-white text-xs sm:text-sm font-semibold tracking-wide mb-5">
+                        <span class="theme-badge-dot w-2 h-2 rounded-full bg-brandRed shrink-0 shadow-[0_0_8px_rgba(200,16,46,0.8)]"></span>
+                        Bespoke Property Collection
+                    </span>
+                    <h1 class="font-playfair text-4xl font-bold leading-tight tracking-tight sm:text-5xl md:text-6xl">Find a place to<br class="hidden sm:block"><span class="text-white/75">call your own.</span></h1>
+                    <p class="mt-5 max-w-2xl text-sm font-light leading-7 text-white/70 md:text-base">
+                        Handpicked premium lands, managed farmlands, luxury villas, and verified investment opportunities across Chennai and Tamil Nadu.
+                    </p>
+                    <a href="#property-listings" class="mt-8 inline-flex items-center gap-3 rounded-full bg-brandRed px-6 py-3.5 text-xs font-bold uppercase tracking-widest text-white shadow-lg shadow-brandRed/25 transition hover:-translate-y-0.5 hover:bg-brandRedDark">
+                        Explore listings <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="hidden justify-end lg:flex" data-aos="fade-left">
+                    <div class="w-full max-w-xs rounded-luxury border border-white/20 bg-white/10 p-7 shadow-2xl backdrop-blur-md">
+                        <span class="text-xs font-semibold uppercase tracking-[0.2em] text-white/65">Curated with care</span>
+                        <div class="my-5 flex items-end gap-3">
+                            <span class="font-playfair text-6xl font-bold leading-none">12</span>
+                            <span class="pb-1 text-sm text-white/75">featured opportunities</span>
+                        </div>
+                        <div class="h-px bg-white/20"></div>
+                        <p class="mt-5 flex items-center gap-2 text-xs font-medium text-white/80"><i class="fa-solid fa-circle-check text-brandRed" aria-hidden="true"></i> Verified listings across Chennai & Tamil Nadu</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Properties Grid Section with Filter Bar -->
+        <section id="property-listings" class="mx-auto max-w-7xl px-6 py-16 md:px-12 md:py-24">
+
+            <div class="mb-8" data-aos="fade-up">
+                <span class="theme-badge inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brandRed/10 border border-brandRed/20 text-brandRed text-xs sm:text-sm font-semibold tracking-wide mb-3">
+                    <span class="theme-badge-dot w-2 h-2 rounded-full bg-brandRed shrink-0 shadow-[0_0_0_2px_rgba(200,16,46,0.2)]"></span>
+                    Explore Our Collection
+                </span>
+                <h2 class="mt-2 font-playfair text-3xl font-bold text-luxuryDark sm:text-4xl">Properties selected for you</h2>
+                <p class="mt-3 max-w-2xl text-sm leading-6 text-luxuryGray">Browse verified homes, projects, plots, and managed farmland. Filter by category to find the opportunity that fits your plans.</p>
+            </div>
+
+            <!-- Filter Bar -->
+            <div class="mb-10 flex flex-col gap-5 rounded-luxury border border-luxuryBorder bg-white p-4 shadow-sm md:flex-row md:items-center md:justify-between md:p-5" data-aos="fade-up">
+                <div class="flex flex-wrap items-center gap-2.5" id="prop-filter-tabs">
+                    <button type="button" class="filter-btn active bg-brandRed text-white text-xs font-bold uppercase tracking-widest py-2.5 px-5 rounded-luxury transition-all duration-300" data-filter="all">
+                        All Properties (13)
+                    </button>
+                    <button type="button" class="filter-btn bg-white border border-luxuryBorder text-luxuryDark hover:border-brandRed hover:text-brandRed text-xs font-bold uppercase tracking-widest py-2.5 px-5 rounded-luxury transition-all duration-300" data-filter="apartments">
+                        Apartments & Projects (12)
+                    </button>
+                    <button type="button" class="filter-btn bg-white border border-luxuryBorder text-luxuryDark hover:border-brandRed hover:text-brandRed text-xs font-bold uppercase tracking-widest py-2.5 px-5 rounded-luxury transition-all duration-300" data-filter="villas">
+                        Plots & Villas (1)
+                    </button>
+                    <button type="button" class="filter-btn bg-white border border-luxuryBorder text-luxuryDark hover:border-brandRed hover:text-brandRed text-xs font-bold uppercase tracking-widest py-2.5 px-5 rounded-luxury transition-all duration-300" data-filter="farmland">
+                        Managed Farmland (0)
+                    </button>
+                </div>
+                <div class="text-xs text-luxuryGray font-medium">
+                    Showing <span id="visible-prop-count" class="font-bold text-luxuryDark">13</span> verified properties
+                </div>
+            </div>
+
+            <!-- Main Property Grid -->
+            <div id="properties-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Property Card: Shriram Codename King Life -->
+                <div class="property-card-item bg-white rounded-luxury overflow-hidden border border-luxuryBorder/50 hover-lift flex flex-col h-full" data-category="apartments" data-aos="fade-up">
+                    <div class="relative zoom-img-container h-80">
+                        <img src="assets/images/properties/shriram-codename-king-life/hero-banner-slider-1.jpg" alt="Shriram Codename King Life Royal 3 and 4 BHK Apartments in Koyambedu" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandRed text-white text-[10px] font-bold tracking-widest uppercase py-1.5 px-3.5 rounded-full shadow-sm">New Launch</div>
+                        <div class="absolute top-4 right-4 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold tracking-widest uppercase py-1.5 px-3.5 rounded-full">Shriram Properties</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                        <div class="space-y-1.5">
+                            <span class="text-brandRed text-lg font-bold font-playfair block">₹1.83 Cr* Onwards</span>
+                            <h3 class="text-xl font-bold text-luxuryDark font-playfair">Shriram Codename King Life</h3>
+                            <p class="text-luxuryGray text-xs flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brandRed"></i> Koyambedu, Chennai</p>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 border-t border-luxuryBorder pt-3 text-xs text-luxuryGray font-medium">
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-bed text-brandRed"></i> 3 &amp; 4 BHK</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-maximize text-brandRed"></i> ~5.62 Ac</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-building text-brandRed"></i> 135 Units</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 pt-2">
+                            <a href="codename-king-life.html" class="w-full block text-center bg-brandRed text-white hover:bg-brandRedDark text-xs font-bold uppercase tracking-widest py-3.5 rounded-luxury transition-all duration-300 shadow-sm">
+                                View Details
+                            </a>
+                            <a href="contact.html?property=shriram_codename_king_life" class="w-full block text-center border-2 border-luxuryDark text-luxuryDark hover:bg-luxuryDark hover:text-white text-xs font-bold uppercase tracking-widest py-3 rounded-luxury transition-all duration-300">
+                                Enquire
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card: Godrej Wonderla -->
+                <div class="property-card-item bg-white rounded-luxury overflow-hidden border border-luxuryBorder/50 hover-lift flex flex-col h-full" data-category="villas" data-aos="fade-up">
+                    <div class="relative zoom-img-container h-80">
+                        <img src="assets/images/properties/godrej-wonderla/hero.jpg" alt="Godrej Wonderla Premium Residential Plots in Thiruporur, OMR" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandRed text-white text-[10px] font-bold tracking-widest uppercase py-1.5 px-3.5 rounded-full shadow-sm">Pre-Launch</div>
+                        <div class="absolute top-4 right-4 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold tracking-widest uppercase py-1.5 px-3.5 rounded-full">Godrej Properties</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                        <div class="space-y-1.5">
+                            <span class="text-brandRed text-lg font-bold font-playfair block">₹38.99 Lakhs* Onwards</span>
+                            <h3 class="text-xl font-bold text-luxuryDark font-playfair">Godrej Wonderla</h3>
+                            <p class="text-luxuryGray text-xs flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brandRed"></i> Thiruporur, OMR, Chennai</p>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 border-t border-luxuryBorder pt-3 text-xs text-luxuryGray font-medium">
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-map text-brandRed"></i> 750–2400 sf</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-maximize text-brandRed"></i> 47 Acres</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-layer-group text-brandRed"></i> 950+ Plots</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 pt-2">
+                            <a href="godrej-wonderla.html" class="w-full block text-center bg-brandRed text-white hover:bg-brandRedDark text-xs font-bold uppercase tracking-widest py-3.5 rounded-luxury transition-all duration-300 shadow-sm">
+                                View Details
+                            </a>
+                            <a href="contact.html?property=godrej_wonderla" class="w-full block text-center border-2 border-luxuryDark text-luxuryDark hover:bg-luxuryDark hover:text-white text-xs font-bold uppercase tracking-widest py-3 rounded-luxury transition-all duration-300">
+                                Enquire
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card: NuTech Central Park -->
+                <div class="property-card-item bg-white rounded-luxury overflow-hidden border border-luxuryBorder/50 hover-lift flex flex-col h-full" data-category="apartments" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative zoom-img-container h-80">
+                        <img src="assets/images/properties/nutech-central-park/hero.jpg" alt="NuTech Central Park 2, 3 & 4 BHK Apartments in Porur" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandRed text-white text-[10px] font-bold tracking-widest uppercase py-1.5 px-3.5 rounded-full shadow-sm">Under Construction</div>
+                        <div class="absolute top-4 right-4 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold tracking-widest uppercase py-1.5 px-3.5 rounded-full">NuTech Projects</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                        <div class="space-y-1.5">
+                            <span class="text-brandRed text-lg font-bold font-playfair block">₹75 Lakhs* Onwards</span>
+                            <h3 class="text-xl font-bold text-luxuryDark font-playfair">NuTech Central Park</h3>
+                            <p class="text-luxuryGray text-xs flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brandRed"></i> Iyyappanthangal, Porur, Chennai</p>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 border-t border-luxuryBorder pt-3 text-xs text-luxuryGray font-medium">
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-bed text-brandRed"></i> 2, 3 & 4 BHK</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-maximize text-brandRed"></i> 10.66 Acres</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-city text-brandRed"></i> 655 Units</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 pt-2">
+                            <a href="nutech-central-park.html" class="w-full block text-center bg-brandRed text-white hover:bg-brandRedDark text-xs font-bold uppercase tracking-widest py-3.5 rounded-luxury transition-all duration-300 shadow-sm">
+                                View Details
+                            </a>
+                            <a href="contact.html?property=nutech_central_park" class="w-full block text-center border-2 border-luxuryDark text-luxuryDark hover:bg-luxuryDark hover:text-white text-xs font-bold uppercase tracking-widest py-3 rounded-luxury transition-all duration-300">
+                                Enquire
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card: Arihant Spaces -->
+                <div class="property-card-item bg-white rounded-luxury overflow-hidden border border-luxuryBorder/50 hover-lift flex flex-col h-full" data-category="apartments" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative zoom-img-container h-80">
+                        <img src="assets/images/properties/arihant-spaces/hero.jpg" alt="Arihant Spaces 4 BHK Boutique Residences in Anna Nagar East" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandRed text-white text-[10px] font-bold tracking-widest uppercase py-1.5 px-3.5 rounded-full shadow-sm">Under Construction</div>
+                        <div class="absolute top-4 right-4 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold tracking-widest uppercase py-1.5 px-3.5 rounded-full">Arihant Spaces</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                        <div class="space-y-1.5">
+                            <span class="text-brandRed text-lg font-bold font-playfair block">₹8.5 Cr* Onwards</span>
+                            <h3 class="text-xl font-bold text-luxuryDark font-playfair">Arihant Spaces</h3>
+                            <p class="text-luxuryGray text-xs flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brandRed"></i> D Block, Anna Nagar East, Chennai</p>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 border-t border-luxuryBorder pt-3 text-xs text-luxuryGray font-medium">
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-crown text-brandRed"></i> Just 5 Homes</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-bed text-brandRed"></i> 4 BHK Palatial</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-ruler-combined text-brandRed"></i> 3,308 Sq.Ft</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 pt-2">
+                            <a href="arihant-spaces.html" class="w-full block text-center bg-brandRed text-white hover:bg-brandRedDark text-xs font-bold uppercase tracking-widest py-3.5 rounded-luxury transition-all duration-300 shadow-sm">
+                                View Details
+                            </a>
+                            <a href="contact.html?property=arihant_spaces" class="w-full block text-center border-2 border-luxuryDark text-luxuryDark hover:bg-luxuryDark hover:text-white text-xs font-bold uppercase tracking-widest py-3 rounded-luxury transition-all duration-300">
+                                Enquire
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card: Urbanrise The World of Joy -->
+                <div class="property-card-item bg-white rounded-luxury overflow-hidden border border-luxuryBorder/50 hover-lift flex flex-col h-full" data-category="apartments" data-aos="fade-up">
+                    <div class="relative zoom-img-container h-80">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=85" alt="Urbanrise The World of Joy apartment community" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandRed text-white text-[10px] font-bold tracking-widest uppercase py-1.5 px-3.5 rounded-full shadow-sm">Nearing Completion</div>
+                        <div class="absolute top-4 right-4 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold tracking-widest uppercase py-1.5 px-3.5 rounded-full">Urbanrise</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                        <div class="space-y-1.5">
+                            <span class="text-brandRed text-lg font-bold font-playfair block">₹58 Lakh* Onwards</span>
+                            <h3 class="text-xl font-bold text-luxuryDark font-playfair">Urbanrise The World of Joy</h3>
+                            <p class="text-luxuryGray text-xs flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brandRed"></i> Siruseri, OMR, Chennai</p>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 border-t border-luxuryBorder pt-3 text-xs text-luxuryGray font-medium">
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-bed text-brandRed"></i> 2 & 3 BHK</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-maximize text-brandRed"></i> 10.13 Acres</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-champagne-glasses text-brandRed"></i> 45k sf Club</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 pt-2">
+                            <a href="urbanrise-the-world-of-joy.html" class="w-full block text-center bg-brandRed text-white hover:bg-brandRedDark text-xs font-bold uppercase tracking-widest py-3.5 rounded-luxury transition-all duration-300 shadow-sm">
+                                View Details
+                            </a>
+                            <a href="contact.html?property=urbanrise_world_of_joy" class="w-full block text-center border-2 border-luxuryDark text-luxuryDark hover:bg-luxuryDark hover:text-white text-xs font-bold uppercase tracking-widest py-3 rounded-luxury transition-all duration-300">
+                                Enquire
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card: DRA Astra -->
+                <div class="property-card-item bg-white rounded-luxury overflow-hidden border border-luxuryBorder/50 hover-lift flex flex-col h-full" data-category="apartments" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative zoom-img-container h-80">
+                        <img src="assets/images/properties/dra-astra/image2.png" alt="DRA Astra" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandRed text-white text-[10px] font-bold tracking-widest uppercase py-1.5 px-3.5 rounded-full shadow-sm">Under Construction</div>
+                        <div class="absolute top-4 right-4 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold tracking-widest uppercase py-1.5 px-3.5 rounded-full">DRA Homes</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                        <div class="space-y-1.5">
+                            <span class="text-brandRed text-lg font-bold font-playfair block">₹1.07 Cr – ₹1.68 Cr</span>
+                            <h3 class="text-xl font-bold text-luxuryDark font-playfair">DRA Astra</h3>
+                            <p class="text-luxuryGray text-xs flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brandRed"></i> Madhavaram, Chennai</p>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 border-t border-luxuryBorder pt-3 text-xs text-luxuryGray font-medium">
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-bed text-brandRed"></i> 2 & 3 BHK</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-ruler-combined text-brandRed"></i> 1066-1695 sf</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-calendar-check text-brandRed"></i> Oct 2027</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 pt-2">
+                            <a href="dra-astra.html" class="w-full block text-center bg-brandRed text-white hover:bg-brandRedDark text-xs font-bold uppercase tracking-widest py-3.5 rounded-luxury transition-all duration-300 shadow-sm">
+                                View Details
+                            </a>
+                            <a href="contact.html?property=dra_astra" class="w-full block text-center border-2 border-luxuryDark text-luxuryDark hover:bg-luxuryDark hover:text-white text-xs font-bold uppercase tracking-widest py-3 rounded-luxury transition-all duration-300">
+                                Enquire
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card: Godrej Azure -->
+                <div class="property-card-item bg-white rounded-luxury overflow-hidden border border-luxuryBorder/50 hover-lift flex flex-col h-full" data-category="apartments" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative zoom-img-container h-80">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=85" alt="Godrej Azure residential community" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandRed text-white text-[10px] font-bold tracking-widest uppercase py-1.5 px-3.5 rounded-full shadow-sm">Under Construction</div>
+                        <div class="absolute top-4 right-4 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold tracking-widest uppercase py-1.5 px-3.5 rounded-full">Godrej</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                        <div class="space-y-1.5">
+                            <span class="text-brandRed text-lg font-bold font-playfair block">₹67 Lakhs – ₹1.27 Cr</span>
+                            <h3 class="text-xl font-bold text-luxuryDark font-playfair">Godrej Azure</h3>
+                            <p class="text-luxuryGray text-xs flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brandRed"></i> Padur, OMR, Chennai</p>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 border-t border-luxuryBorder pt-3 text-xs text-luxuryGray font-medium">
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-bed text-brandRed"></i> 2 & 3 BHK</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-maximize text-brandRed"></i> 6.22 Acres</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-calendar-check text-brandRed"></i> Dec 2028</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 pt-2">
+                            <a href="godrej-azure.html" class="w-full block text-center bg-brandRed text-white hover:bg-brandRedDark text-xs font-bold uppercase tracking-widest py-3.5 rounded-luxury transition-all duration-300 shadow-sm">
+                                View Details
+                            </a>
+                            <a href="contact.html?property=godrej_azure" class="w-full block text-center border-2 border-luxuryDark text-luxuryDark hover:bg-luxuryDark hover:text-white text-xs font-bold uppercase tracking-widest py-3 rounded-luxury transition-all duration-300">
+                                Enquire
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card: Purva Windermere -->
+                <div class="property-card-item bg-white rounded-luxury overflow-hidden border border-luxuryBorder/50 hover-lift flex flex-col h-full" data-category="apartments" data-aos="fade-up">
+                    <div class="relative zoom-img-container h-80">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1000&q=85" alt="Purva Windermere residences" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandRed text-white text-[10px] font-bold tracking-widest uppercase py-1.5 px-3.5 rounded-full shadow-sm">Ongoing</div>
+                        <div class="absolute top-4 right-4 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold tracking-widest uppercase py-1.5 px-3.5 rounded-full">Puravankara</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                        <div class="space-y-1.5">
+                            <span class="text-brandRed text-lg font-bold font-playfair block">₹51.49 L – ₹1.25 Cr*</span>
+                            <h3 class="text-xl font-bold text-luxuryDark font-playfair">Purva Windermere</h3>
+                            <p class="text-luxuryGray text-xs flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brandRed"></i> Medavakkam, Chennai</p>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 border-t border-luxuryBorder pt-3 text-xs text-luxuryGray font-medium">
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-bed text-brandRed"></i> 1, 2 & 3 BHK</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-maximize text-brandRed"></i> 55 Acres</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-calendar-check text-brandRed"></i> Dec 2026</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 pt-2">
+                            <a href="purva-windermere.html" class="w-full block text-center bg-brandRed text-white hover:bg-brandRedDark text-xs font-bold uppercase tracking-widest py-3.5 rounded-luxury transition-all duration-300 shadow-sm">
+                                View Details
+                            </a>
+                            <a href="contact.html?property=purva_windermere" class="w-full block text-center border-2 border-luxuryDark text-luxuryDark hover:bg-luxuryDark hover:text-white text-xs font-bold uppercase tracking-widest py-3 rounded-luxury transition-all duration-300">
+                                Enquire
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card: Radiance Solitaire -->
+                <div class="property-card-item bg-white rounded-luxury overflow-hidden border border-luxuryBorder/50 hover-lift flex flex-col h-full" data-category="apartments" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative zoom-img-container h-80">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=85" alt="Radiance Solitaire residential project" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandRed text-white text-[10px] font-bold tracking-widest uppercase py-1.5 px-3.5 rounded-full shadow-sm">New Launch</div>
+                        <div class="absolute top-4 right-4 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold tracking-widest uppercase py-1.5 px-3.5 rounded-full">Radiance</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                        <div class="space-y-1.5">
+                            <span class="text-brandRed text-lg font-bold font-playfair block">₹60 Lakh – ₹1.86 Cr</span>
+                            <h3 class="text-xl font-bold text-luxuryDark font-playfair">Radiance Solitaire</h3>
+                            <p class="text-luxuryGray text-xs flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brandRed"></i> Madhavaram, Chennai</p>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 border-t border-luxuryBorder pt-3 text-xs text-luxuryGray font-medium">
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-bed text-brandRed"></i> 2, 3 & 4 BHK</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-city text-brandRed"></i> 660 Units</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-calendar-check text-brandRed"></i> Jun 2028</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 pt-2">
+                            <a href="radience-solitaire.html" class="w-full block text-center bg-brandRed text-white hover:bg-brandRedDark text-xs font-bold uppercase tracking-widest py-3.5 rounded-luxury transition-all duration-300 shadow-sm">
+                                View Details
+                            </a>
+                            <a href="contact.html?property=radiance_solitaire" class="w-full block text-center border-2 border-luxuryDark text-luxuryDark hover:bg-luxuryDark hover:text-white text-xs font-bold uppercase tracking-widest py-3 rounded-luxury transition-all duration-300">
+                                Enquire
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card: TVS Emerald Udyana Phase 3 -->
+                <div class="property-card-item bg-white rounded-luxury overflow-hidden border border-luxuryBorder/50 hover-lift flex flex-col h-full" data-category="apartments" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative zoom-img-container h-80">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=85" alt="TVS Emerald Udyana Phase 3 residences" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandRed text-white text-[10px] font-bold tracking-widest uppercase py-1.5 px-3.5 rounded-full shadow-sm">Under Construction</div>
+                        <div class="absolute top-4 right-4 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold tracking-widest uppercase py-1.5 px-3.5 rounded-full">TVS Emerald</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                        <div class="space-y-1.5">
+                            <span class="text-brandRed text-lg font-bold font-playfair block">₹96.2 L – ₹1.29 Cr*</span>
+                            <h3 class="text-xl font-bold text-luxuryDark font-playfair">TVS Emerald Udyana Phase 3</h3>
+                            <p class="text-luxuryGray text-xs flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brandRed"></i> Medavakkam, Chennai</p>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 border-t border-luxuryBorder pt-3 text-xs text-luxuryGray font-medium">
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-bed text-brandRed"></i> 2 & 3 BHK</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-ruler-combined text-brandRed"></i> 1332-1665 sf</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-tree text-brandRed"></i> 62% Open</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 pt-2">
+                            <a href="tvs-emerald-udyana-phase-3.html" class="w-full block text-center bg-brandRed text-white hover:bg-brandRedDark text-xs font-bold uppercase tracking-widest py-3.5 rounded-luxury transition-all duration-300 shadow-sm">
+                                View Details
+                            </a>
+                            <a href="contact.html?property=tvs_udyana" class="w-full block text-center border-2 border-luxuryDark text-luxuryDark hover:bg-luxuryDark hover:text-white text-xs font-bold uppercase tracking-widest py-3 rounded-luxury transition-all duration-300">
+                                Enquire
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card: TVS Emerald Verde Vista -->
+                <div class="property-card-item bg-white rounded-luxury overflow-hidden border border-luxuryBorder/50 hover-lift flex flex-col h-full" data-category="apartments" data-aos="fade-up">
+                    <div class="relative zoom-img-container h-80">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=85" alt="TVS Emerald Verde Vista residential project" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandRed text-white text-[10px] font-bold tracking-widest uppercase py-1.5 px-3.5 rounded-full shadow-sm">Under Construction</div>
+                        <div class="absolute top-4 right-4 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold tracking-widest uppercase py-1.5 px-3.5 rounded-full">TVS Emerald</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                        <div class="space-y-1.5">
+                            <span class="text-brandRed text-lg font-bold font-playfair block">₹78 Lakhs – ₹1.94 Cr*</span>
+                            <h3 class="text-xl font-bold text-luxuryDark font-playfair">TVS Emerald Verde Vista</h3>
+                            <p class="text-luxuryGray text-xs flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brandRed"></i> Padur, OMR, Chennai</p>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 border-t border-luxuryBorder pt-3 text-xs text-luxuryGray font-medium">
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-bed text-brandRed"></i> 2, 3 & 4 BHK</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-layer-group text-brandRed"></i> Low-Rise</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-calendar-check text-brandRed"></i> Jan 2030</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 pt-2">
+                            <a href="tvs-emerald-verde-vista.html" class="w-full block text-center bg-brandRed text-white hover:bg-brandRedDark text-xs font-bold uppercase tracking-widest py-3.5 rounded-luxury transition-all duration-300 shadow-sm">
+                                View Details
+                            </a>
+                            <a href="contact.html?property=tvs_verde_vista" class="w-full block text-center border-2 border-luxuryDark text-luxuryDark hover:bg-luxuryDark hover:text-white text-xs font-bold uppercase tracking-widest py-3 rounded-luxury transition-all duration-300">
+                                Enquire
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card: Prestige Palm Court -->
+                <div class="property-card-item bg-white rounded-luxury overflow-hidden border border-luxuryBorder/50 hover-lift flex flex-col h-full" data-category="apartments" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative zoom-img-container h-80">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=85" alt="Prestige Palm Court residences" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandRed text-white text-[10px] font-bold tracking-widest uppercase py-1.5 px-3.5 rounded-full shadow-sm">New Launch</div>
+                        <div class="absolute top-4 right-4 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold tracking-widest uppercase py-1.5 px-3.5 rounded-full">Prestige</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                        <div class="space-y-1.5">
+                            <span class="text-brandRed text-lg font-bold font-playfair block">₹67.5 L – ₹1.99 Cr</span>
+                            <h3 class="text-xl font-bold text-luxuryDark font-playfair">Prestige Palm Court</h3>
+                            <p class="text-luxuryGray text-xs flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brandRed"></i> Madhavaram, Chennai</p>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 border-t border-luxuryBorder pt-3 text-xs text-luxuryGray font-medium">
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-bed text-brandRed"></i> 1, 2 & 3 BHK</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-building text-brandRed"></i> 22 Floors</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-calendar-check text-brandRed"></i> Dec 2029</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 pt-2">
+                            <a href="prestige-palm-court.html" class="w-full block text-center bg-brandRed text-white hover:bg-brandRedDark text-xs font-bold uppercase tracking-widest py-3.5 rounded-luxury transition-all duration-300 shadow-sm">
+                                View Details
+                            </a>
+                            <a href="contact.html?property=prestige_palm_court" class="w-full block text-center border-2 border-luxuryDark text-luxuryDark hover:bg-luxuryDark hover:text-white text-xs font-bold uppercase tracking-widest py-3 rounded-luxury transition-all duration-300">
+                                Enquire
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card: Prestige Pallavaram Gardens -->
+                <div class="property-card-item bg-white rounded-luxury overflow-hidden border border-luxuryBorder/50 hover-lift flex flex-col h-full" data-category="apartments" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative zoom-img-container h-80">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=85" alt="Prestige Pallavaram Gardens residences" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandRed text-white text-[10px] font-bold tracking-widest uppercase py-1.5 px-3.5 rounded-full shadow-sm">Under Construction</div>
+                        <div class="absolute top-4 right-4 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold tracking-widest uppercase py-1.5 px-3.5 rounded-full">Prestige</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                        <div class="space-y-1.5">
+                            <span class="text-brandRed text-lg font-bold font-playfair block">₹1.28 Cr – ₹3.50 Cr*</span>
+                            <h3 class="text-xl font-bold text-luxuryDark font-playfair">Prestige Pallavaram Gardens</h3>
+                            <p class="text-luxuryGray text-xs flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brandRed"></i> Pallavaram, Chennai</p>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 border-t border-luxuryBorder pt-3 text-xs text-luxuryGray font-medium">
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-bed text-brandRed"></i> 2, 3 & 4 BHK</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-maximize text-brandRed"></i> 22 Acres</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-calendar-check text-brandRed"></i> Dec 2029</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 pt-2">
+                            <a href="prestige-pallavaram-gardens.html" class="w-full block text-center bg-brandRed text-white hover:bg-brandRedDark text-xs font-bold uppercase tracking-widest py-3.5 rounded-luxury transition-all duration-300 shadow-sm">
+                                View Details
+                            </a>
+                            <a href="contact.html?property=prestige_pallavaram" class="w-full block text-center border-2 border-luxuryDark text-luxuryDark hover:bg-luxuryDark hover:text-white text-xs font-bold uppercase tracking-widest py-3 rounded-luxury transition-all duration-300">
+                                Enquire
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Property Card: Coconut Grove Managed Farmland -->
+                <!-- <div class="property-card-item bg-white rounded-luxury overflow-hidden border border-luxuryBorder/50 hover-lift flex flex-col h-full" data-category="farmland" data-aos="fade-up">
+                    <div class="relative zoom-img-container h-80">
+                        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" alt="Coconut Grove Managed Farmland" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandRed text-white text-[10px] font-bold tracking-widest uppercase py-2 px-4 rounded-full">Managed Farmland</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div class="space-y-2">
+                            <span class="text-brandRed text-lg font-bold font-playfair">₹2,400,000 onwards</span>
+                            <h3 class="text-xl font-bold text-luxuryDark font-playfair">Coconut Grove Farmland</h3>
+                            <p class="text-luxuryGray text-xs flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brandRed"></i> Chengalpattu, TN</p>
+                        </div>
+                        <div class="grid grid-cols-3 gap-4 border-t border-luxuryBorder mt-6 pt-4 text-xs text-luxuryGray font-medium">
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-maximize text-brandRed"></i> 10,000 sq.ft</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-seedling text-brandRed"></i> Coconut Farm</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield text-brandRed"></i> Fenced</span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="contact.html?property=coconut_grove" class="w-full block text-center bg-luxuryDark text-white hover:bg-brandRed hover:text-white text-xs font-bold uppercase tracking-widest py-4 rounded-luxury transition-all duration-300">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Property Card: Royal Palms Mango Orchard -->
+                <!-- <div class="property-card-item bg-white rounded-luxury overflow-hidden border border-luxuryBorder/50 hover-lift flex flex-col h-full" data-category="farmland" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative zoom-img-container h-80">
+                        <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=800&q=80" alt="Royal Palms Mango Orchard" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandRed text-white text-[10px] font-bold tracking-widest uppercase py-2 px-4 rounded-full">Managed Farmland</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div class="space-y-2">
+                            <span class="text-brandRed text-lg font-bold font-playfair">₹3,600,000</span>
+                            <h3 class="text-xl font-bold text-luxuryDark font-playfair">Royal Palms Orchard</h3>
+                            <p class="text-luxuryGray text-xs flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brandRed"></i> Maduranthakam, TN</p>
+                        </div>
+                        <div class="grid grid-cols-3 gap-4 border-t border-luxuryBorder mt-6 pt-4 text-xs text-luxuryGray font-medium">
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-maximize text-brandRed"></i> 12,000 sq.ft</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-tree text-brandRed"></i> Mango Trees</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield text-brandRed"></i> Secure Layout</span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="contact.html?property=royal_palms" class="w-full block text-center bg-luxuryDark text-white hover:bg-brandRed hover:text-white text-xs font-bold uppercase tracking-widest py-4 rounded-luxury transition-all duration-300">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Property Card: Goed Signature Luxury Villa -->
+                <!-- <div class="property-card-item bg-white rounded-luxury overflow-hidden border border-luxuryBorder/50 hover-lift flex flex-col h-full" data-category="villas" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative zoom-img-container h-80">
+                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80" alt="Goed Signature Luxury Villa" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandRed text-white text-[10px] font-bold tracking-widest uppercase py-2 px-4 rounded-full">Luxury Villa</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div class="space-y-2">
+                            <span class="text-brandRed text-lg font-bold font-playfair">₹18,500,000</span>
+                            <h3 class="text-xl font-bold text-luxuryDark font-playfair">Goed Signature Villa</h3>
+                            <p class="text-luxuryGray text-xs flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brandRed"></i> ECR, Chennai</p>
+                        </div>
+                        <div class="grid grid-cols-3 gap-4 border-t border-luxuryBorder mt-6 pt-4 text-xs text-luxuryGray font-medium">
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-bed text-brandRed"></i> 4 Beds</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-bath text-brandRed"></i> 4 Baths</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-maximize text-brandRed"></i> 3,800 sq.ft</span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="contact.html?property=goed_signature_villa" class="w-full block text-center bg-luxuryDark text-white hover:bg-brandRed hover:text-white text-xs font-bold uppercase tracking-widest py-4 rounded-luxury transition-all duration-300">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Property Card: DTCP Approved Layout Plots -->
+                <!-- <div class="property-card-item bg-white rounded-luxury overflow-hidden border border-luxuryBorder/50 hover-lift flex flex-col h-full" data-category="villas" data-aos="fade-up">
+                    <div class="relative zoom-img-container h-80">
+                        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="DTCP Approved Layout Plots" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandRed text-white text-[10px] font-bold tracking-widest uppercase py-2 px-4 rounded-full">DTCP Approved</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div class="space-y-2">
+                            <span class="text-brandRed text-lg font-bold font-playfair">₹1,800,000</span>
+                            <h3 class="text-xl font-bold text-luxuryDark font-playfair">DTCP Approved Plots</h3>
+                            <p class="text-luxuryGray text-xs flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brandRed"></i> ECR Link Road, Chennai</p>
+                        </div>
+                        <div class="grid grid-cols-3 gap-4 border-t border-luxuryBorder mt-6 pt-4 text-xs text-luxuryGray font-medium">
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-maximize text-brandRed"></i> 2,400 sq.ft</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-road text-brandRed"></i> 30ft Roads</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-brandRed"></i> Legally Clear</span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="contact.html?property=dtcp_plots" class="w-full block text-center bg-luxuryDark text-white hover:bg-brandRed hover:text-white text-xs font-bold uppercase tracking-widest py-4 rounded-luxury transition-all duration-300">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Property Card: CMDA Gated Plots -->
+                <!-- <div class="property-card-item bg-white rounded-luxury overflow-hidden border border-luxuryBorder/50 hover-lift flex flex-col h-full" data-category="villas" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative zoom-img-container h-80">
+                        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" alt="CMDA Approved Villa Plots" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandRed text-white text-[10px] font-bold tracking-widest uppercase py-2 px-4 rounded-full">CMDA Approved</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div class="space-y-2">
+                            <span class="text-brandRed text-lg font-bold font-playfair">₹4,500,000</span>
+                            <h3 class="text-xl font-bold text-luxuryDark font-playfair">CMDA Gated Plots</h3>
+                            <p class="text-luxuryGray text-xs flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brandRed"></i> Anna Nagar Ext, Chennai</p>
+                        </div>
+                        <div class="grid grid-cols-3 gap-4 border-t border-luxuryBorder mt-6 pt-4 text-xs text-luxuryGray font-medium">
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-maximize text-brandRed"></i> 1,800 sq.ft</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-house text-brandRed"></i> Ready to Build</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-brandRed"></i> Verified Title</span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="contact.html?property=cmda_plots" class="w-full block text-center bg-luxuryDark text-white hover:bg-brandRed hover:text-white text-xs font-bold uppercase tracking-widest py-4 rounded-luxury transition-all duration-300">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </section>
+
+        <!-- Interactive Mortgage Calculator Section -->
+        <section class="relative overflow-hidden border-t border-luxuryBorder bg-white px-6 py-20 md:px-12 md:py-28">
+            <div class="pointer-events-none absolute -left-32 -top-24 h-96 w-96 rounded-full bg-brandRed/5" aria-hidden="true"></div>
+            <div class="relative mx-auto max-w-6xl space-y-10">
+                <div class="mx-auto max-w-2xl space-y-4 text-center">
+                    <span class="theme-badge inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brandRed/10 border border-brandRed/20 text-brandRed text-xs sm:text-sm font-semibold tracking-wide">
+                        <span class="theme-badge-dot w-2 h-2 rounded-full bg-brandRed shrink-0 shadow-[0_0_0_2px_rgba(200,16,46,0.2)]"></span>
+                        Interactive Financial Planner
+                    </span>
+                    <h2 class="text-3xl md:text-5xl font-bold text-luxuryDark font-playfair">Plan your next move</h2>
+                    <p class="text-luxuryGray text-sm md:text-base font-light leading-7">
+                        Estimate your monthly repayments based on property values and standard home loan options in India.
+                    </p>
+                </div>
+
+                <!-- Calculator Interface Card -->
+                <div class="grid grid-cols-1 items-stretch gap-6 rounded-luxury border border-luxuryBorder bg-white p-4 shadow-[0_24px_70px_-38px_rgba(17,24,39,.45)] sm:p-6 md:grid-cols-[1.15fr_.85fr] md:gap-8 md:p-8" data-aos="zoom-in">
+                    <!-- Left Form Sliders -->
+                    <div class="space-y-6 rounded-luxury bg-luxurySlate p-5 sm:p-7">
+                        <!-- Property Price -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-xs font-bold text-luxuryDark uppercase tracking-wider">
+                                <label for="calc-price">Property Price</label>
+                                <span id="calc-price-txt">₹10,000,000</span>
+                            </div>
+                            <input type="range" id="calc-price" min="1000000" max="30000000" step="500000" value="10000000"
+                                   class="w-full accent-brandRed h-1 bg-luxuryBorder rounded-lg appearance-none cursor-pointer">
+                        </div>
+
+                        <!-- Down Payment -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-xs font-bold text-luxuryDark uppercase tracking-wider">
+                                <label for="calc-down">Down Payment</label>
+                                <span id="calc-down-txt">₹2,000,000</span>
+                            </div>
+                            <input type="range" id="calc-down" min="200000" max="10000000" step="100000" value="2000000"
+                                   class="w-full accent-brandRed h-1 bg-luxuryBorder rounded-lg appearance-none cursor-pointer">
+                        </div>
+
+                        <!-- Interest Rate -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-xs font-bold text-luxuryDark uppercase tracking-wider">
+                                <label for="calc-rate">Interest Rate (p.a.)</label>
+                                <span id="calc-rate-txt">8.5%</span>
+                            </div>
+                            <input type="range" id="calc-rate" min="7" max="15" step="0.25" value="8.5"
+                                   class="w-full accent-brandRed h-1 bg-luxuryBorder rounded-lg appearance-none cursor-pointer">
+                        </div>
+
+                        <!-- Loan Term -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-xs font-bold text-luxuryDark uppercase tracking-wider">
+                                <label for="calc-term">Loan Term</label>
+                                <span id="calc-term-txt">20 Years</span>
+                            </div>
+                            <input type="range" id="calc-term" min="5" max="30" step="5" value="20"
+                                   class="w-full accent-brandRed h-1 bg-luxuryBorder rounded-lg appearance-none cursor-pointer">
+                        </div>
+                    </div>
+
+                    <!-- Right Calculator Output -->
+                    <div class="relative flex flex-col justify-center overflow-hidden rounded-luxury bg-luxuryDark p-7 text-center text-white sm:p-9">
+                        <div class="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full border border-white/10" aria-hidden="true"></div>
+                        <div class="relative space-y-7">
+                        <span class="text-xs uppercase tracking-widest text-brandRed font-bold">Estimated Monthly EMI</span>
+                        <div class="space-y-3">
+                            <span id="calc-result" class="text-4xl md:text-5xl font-bold font-playfair text-white block">₹69,426</span>
+                            <span class="text-xs leading-5 text-white/55 block">Excluding stamp duty, registration charges, and insurance.</span>
+                        </div>
+                        <div class="border-t border-white/10 pt-6">
+                            <a href="contact.html" class="btn-brand-gradient w-full block text-center text-xs font-bold uppercase tracking-widest py-4 rounded-luxury">
+                                Pre-Qualify Now
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Placeholder with Accessible Fallback -->
+    <div id="footer-placeholder">
+        <footer class="bg-slate-50 text-[#333333] pt-20 pb-12 px-6 md:px-12 font-inter border-t border-slate-200">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-10 pb-14 border-b border-slate-200">
+                <!-- Brand & Description -->
+                <div class="space-y-6 xl:col-span-1 md:col-span-2 lg:col-span-1">
+                    <a href="index.html" class="flex items-center" aria-label="Goed Properties Home">
+                        <img src="assets/images/icons/header-logo.svg" alt="Goed Properties Logo" class="h-10 w-auto object-contain">
+                    </a>
+                    <p class="text-[#666666] text-sm leading-relaxed font-light">
+                        For over 15 years, Goed Properties has been Chennai's premier real estate consultancy, connecting buyers with legally verified residential plots, premium apartments, luxury villas, and high-value investment properties.
+                    </p>
+                    <div class="flex items-center space-x-3 pt-2">
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-[#C8102E] hover:bg-[#C8102E] hover:text-white hover:border-[#C8102E] hover:-translate-y-1 transition-all duration-300"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-[#C8102E] hover:bg-[#C8102E] hover:text-white hover:border-[#C8102E] hover:-translate-y-1 transition-all duration-300"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-[#C8102E] hover:bg-[#C8102E] hover:text-white hover:border-[#C8102E] hover:-translate-y-1 transition-all duration-300"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-[#C8102E] hover:bg-[#C8102E] hover:text-white hover:border-[#C8102E] hover:-translate-y-1 transition-all duration-300"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/919941843344" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-[#25D366] hover:bg-[#25D366] hover:text-white hover:border-[#25D366] hover:-translate-y-1 transition-all duration-300"><i class="fa-brands fa-whatsapp text-lg"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="space-y-4">
+                    <h4 class="text-sm font-bold uppercase tracking-widest text-[#C8102E] font-playfair border-b-2 border-[#C8102E]/20 pb-2 inline-block">Quick Links</h4>
+                    <ul class="space-y-2.5 text-sm text-[#666666] font-medium">
+                        <li><a href="index.html" class="hover:text-[#C8102E] transition-colors duration-300 flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-[#C8102E]/60"></i> Home</a></li>
+                        <li><a href="about.html" class="hover:text-[#C8102E] transition-colors duration-300 flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-[#C8102E]/60"></i> About Us</a></li>
+                        <li><a href="properties.html" class="hover:text-[#C8102E] transition-colors duration-300 flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-[#C8102E]/60"></i> Properties Portfolio</a></li>
+                        <li><a href="services.html" class="hover:text-[#C8102E] transition-colors duration-300 flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-[#C8102E]/60"></i> Our Services</a></li>
+                        <li><a href="contact.html" class="hover:text-[#C8102E] transition-colors duration-300 flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-[#C8102E]/60"></i> Contact Us</a></li>
+                        <li><a href="privacy-policy.html" class="hover:text-[#C8102E] transition-colors duration-300 flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-[#C8102E]/60"></i> Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Featured Projects -->
+                <div class="space-y-4">
+                    <h4 class="text-sm font-bold uppercase tracking-widest text-[#C8102E] font-playfair border-b-2 border-[#C8102E]/20 pb-2 inline-block">Featured Projects</h4>
+                    <ul class="space-y-2 text-xs text-[#666666] font-medium">
+                        <li><a href="arihant-spaces.html" class="hover:text-[#C8102E] transition-colors duration-300 block truncate" title="Arihant Spaces - Anna Nagar East">Arihant Spaces</a></li>
+                        <li><a href="godrej-wonderla.html" class="hover:text-[#C8102E] transition-colors duration-300 block truncate" title="Godrej Wonderla - Thiruporur, OMR">Godrej Wonderla</a></li>
+                        <li><a href="nutech-central-park.html" class="hover:text-[#C8102E] transition-colors duration-300 block truncate" title="NuTech Central Park - Porur">NuTech Central Park</a></li>
+                        <li><a href="codename-king-life.html" class="hover:text-[#C8102E] transition-colors duration-300 block truncate" title="Shriram Codename King Life - Koyambedu">Shriram Codename King Life</a></li>
+                        <li><a href="thirumazhisai-property.html" class="hover:text-[#C8102E] transition-colors duration-300 block truncate" title="Urbanrise The Next Big Thing - Thirumazhisai">Urbanrise Next Big Thing</a></li>
+                        <li><a href="dra-astra.html" class="hover:text-[#C8102E] transition-colors duration-300 block truncate">DRA Astra</a></li>
+                        <li><a href="godrej-azure.html" class="hover:text-[#C8102E] transition-colors duration-300 block truncate">Godrej Azure</a></li>
+                        <li><a href="prestige-pallavaram-gardens.html" class="hover:text-[#C8102E] transition-colors duration-300 block truncate">Prestige Pallavaram Gardens</a></li>
+                        <li><a href="prestige-palm-court.html" class="hover:text-[#C8102E] transition-colors duration-300 block truncate">Prestige Palm Court</a></li>
+                        <li><a href="purva-windermere.html" class="hover:text-[#C8102E] transition-colors duration-300 block truncate">Purva Windermere</a></li>
+                        <li><a href="radience-solitaire.html" class="hover:text-[#C8102E] transition-colors duration-300 block truncate">Radiance Solitaire</a></li>
+                        <li><a href="tvs-emerald-verde-vista.html" class="hover:text-[#C8102E] transition-colors duration-300 block truncate">TVS Emerald Verde Vista</a></li>
+                        <li><a href="urbanrise-the-world-of-joy.html" class="hover:text-[#C8102E] transition-colors duration-300 block truncate">Urbanrise World of Joy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Tools & Advisory -->
+                <div class="space-y-4">
+                    <h4 class="text-sm font-bold uppercase tracking-widest text-[#C8102E] font-playfair border-b-2 border-[#C8102E]/20 pb-2 inline-block">Tools &amp; Insights</h4>
+                    <ul class="space-y-2.5 text-sm text-[#666666] font-medium">
+                        <li><a href="investment-calculator.html" class="hover:text-[#C8102E] transition-colors duration-300 flex items-center gap-1.5"><i class="fa-solid fa-calculator text-[11px] text-[#C8102E]/60"></i> Investment Calculator</a></li>
+                        <li><a href="area-converter.html" class="hover:text-[#C8102E] transition-colors duration-300 flex items-center gap-1.5"><i class="fa-solid fa-ruler-combined text-[11px] text-[#C8102E]/60"></i> Area Converter</a></li>
+                        <li><a href="calculator.html" class="hover:text-[#C8102E] transition-colors duration-300 flex items-center gap-1.5"><i class="fa-solid fa-coins text-[11px] text-[#C8102E]/60"></i> EMI / Loan Calculator</a></li>
+                        <li><a href="contact.html" class="hover:text-[#C8102E] transition-colors duration-300 flex items-center gap-1.5"><i class="fa-solid fa-calendar-check text-[11px] text-[#C8102E]/60"></i> Book Site Visit</a></li>
+                    </ul>
+                    <div class="pt-3 border-t border-slate-200">
+                        <span class="text-[10px] uppercase font-bold tracking-widest text-[#C8102E] block mb-1">RERA Verification</span>
+                        <p class="text-[11px] text-[#666666] leading-relaxed font-light">
+                            Layouts &amp; projects registered under TNRERA. Verify at <a href="https://www.rera.tn.gov.in/" target="_blank" rel="noopener noreferrer" class="underline font-medium hover:text-[#C8102E]">rera.tn.gov.in</a>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Corporate Office -->
+                <div class="space-y-4">
+                    <h4 class="text-sm font-bold uppercase tracking-widest text-[#C8102E] font-playfair border-b-2 border-[#C8102E]/20 pb-2 inline-block">Corporate Office</h4>
+                    <ul class="space-y-3 text-xs text-[#666666] font-light">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-location-dot text-[#C8102E] mt-1 flex-shrink-0"></i>
+                            <span>No.42, 2nd Floor, Sindur shopping center, 2nd avenue, Anna Nagar, Chennai - 600040.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-phone text-[#C8102E] mt-0.5 flex-shrink-0"></i>
+                            <span class="space-y-0.5">
+                                <a href="tel:+919941843344" class="hover:text-[#C8102E] transition-colors duration-300 font-medium">+91 99418 43344</a><br>
+                                <a href="tel:+917824824301" class="hover:text-[#C8102E] transition-colors duration-300 font-medium">+91 78248 24301</a>
+                            </span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-brands fa-whatsapp text-[#25D366] mt-0.5 text-sm flex-shrink-0"></i>
+                            <a href="https://wa.me/919941843344" target="_blank" rel="noopener noreferrer" class="hover:text-[#C8102E] transition-colors duration-300 font-medium">WhatsApp Support</a>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-envelope text-[#C8102E] mt-0.5 flex-shrink-0"></i>
+                            <a href="mailto:srinivasan.c@goedproperties.in" class="hover:text-[#C8102E] transition-colors duration-300 break-all">srinivasan.c@goedproperties.in</a>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-clock text-[#C8102E] mt-0.5 flex-shrink-0"></i>
+                            <span>Mon – Sun: 10:00 AM – 6:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Newsletter Row -->
+            <div class="max-w-7xl mx-auto py-8 border-b border-slate-200 flex flex-col lg:flex-row items-center justify-between gap-6">
+                <div class="space-y-1 text-center lg:text-left">
+                    <h4 class="text-sm font-bold uppercase tracking-widest text-[#C8102E] font-playfair">Stay Ahead with Verified Property Updates</h4>
+                    <p class="text-xs text-[#666666] font-light">Subscribe to receive exclusive Chennai property launches, verified plots, and high-ROI investment alerts.</p>
+                </div>
+                <form class="flex w-full max-w-md gap-2" onsubmit="event.preventDefault(); alert('Thank you for subscribing! We will keep you updated.'); this.reset();">
+                    <input type="email" placeholder="Enter your email address" required 
+                           class="flex-1 bg-white border border-slate-300 rounded-luxury py-3 px-4 text-xs text-[#333333] placeholder-slate-400 focus:outline-none focus:border-[#C8102E] transition-colors">
+                    <button type="submit" aria-label="Subscribe" 
+                            class="bg-[#C8102E] hover:bg-[#A30B22] text-white text-xs font-semibold px-5 py-3 rounded-luxury transition-all duration-300 flex items-center gap-2 whitespace-nowrap shadow-sm hover:shadow">
+                <span>Subscribe</span>
+                <i class="fa-solid fa-arrow-right-long text-[11px]"></i>
+            </button>
+        </form>
+    </div>
+
+    <!-- Copyright, Credits & Legal -->
+    <div class="max-w-7xl mx-auto pt-8 flex flex-col lg:flex-row items-center justify-between text-xs text-[#666666] font-light gap-6 text-center lg:text-left">
+        <p>&copy; 2026 Goed Properties. All rights reserved. 15+ years of trusted real estate advisory in Chennai.</p>
+        
+        <!-- Designed and Developed by Rankraze with Navigate Button -->
+        <div class="flex flex-wrap items-center justify-center gap-2 text-xs">
+            <span class="text-slate-600">Designed and Developed by <a href="https://rankraze.com/" target="_blank" rel="noopener noreferrer" class="font-semibold text-slate-900 hover:text-[#C8102E] transition-colors underline decoration-dotted underline-offset-4">Rankraze</a></span>
+            <a href="https://rankraze.com/" target="_blank" rel="noopener noreferrer" 
+               class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#C8102E] hover:bg-[#A30B22] text-white text-[11px] font-semibold tracking-wider transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105"
+               aria-label="Navigate to Rankraze">
+                <span>Visit Rankraze</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+            </a>
+        </div>
+
+        <div class="flex space-x-6 justify-center">
+            <a href="privacy-policy.html" class="hover:text-[#C8102E] transition-colors duration-300">Privacy Policy</a>
+            <a href="privacy-policy.html#terms" class="hover:text-[#C8102E] transition-colors duration-300">Terms of Service</a>
+            <a href="contact.html" class="hover:text-[#C8102E] transition-colors duration-300">Contact</a>
+        </div>
+    </div>
+</footer>
+    </div>
+
+    <!-- Floating Action Widgets -->
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col space-y-3">
+        <!-- WhatsApp Chat Button -->
+        <a href="https://wa.me/919941843344" target="_blank" rel="noopener noreferrer" 
+           class="float-action bg-[#25D366] text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-2xl hover:scale-110 transition-transform duration-300"
+           aria-label="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        
+        <!-- Direct Telephone Button -->
+        <a href="tel:+919941843344" 
+           class="float-action-delay bg-luxuryDark text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-xl hover:scale-110 transition-transform duration-300 border border-white/10"
+           aria-label="Call Goed Properties Advisor">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        
+        <!-- Back To Top Button -->
+        <button id="back-to-top" 
+                class="bg-brandRed text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-lg hover:scale-110 transition-all duration-300"
+                aria-label="Back to Top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <!-- Script Loads -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom Controllers -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/animations.js"></script>
+
+    <!-- Local Mortgage Calculation Script -->
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const priceRange = document.getElementById("calc-price");
+        const downRange = document.getElementById("calc-down");
+        const rateRange = document.getElementById("calc-rate");
+        const termRange = document.getElementById("calc-term");
+
+        const priceVal = document.getElementById("calc-price-txt");
+        const downVal = document.getElementById("calc-down-txt");
+        const rateVal = document.getElementById("calc-rate-txt");
+        const termVal = document.getElementById("calc-term-txt");
+        
+        const resultVal = document.getElementById("calc-result");
+
+        function calculateMortgage() {
+            const price = parseFloat(priceRange.value);
+            const down = parseFloat(downRange.value);
+            const rate = parseFloat(rateRange.value);
+            const term = parseFloat(termRange.value);
+
+            // Update Label Text Displays
+            priceVal.textContent = "₹" + price.toLocaleString();
+            downVal.textContent = "₹" + down.toLocaleString();
+            rateVal.textContent = rate + "%";
+            termVal.textContent = term + " Years";
+
+            // Configure Down Payment range validation
+            downRange.max = price * 0.8;
+
+            const principal = price - down;
+            if (principal <= 0) {
+                resultVal.textContent = "₹0";
+                return;
+            }
+
+            const monthlyRate = (rate / 100) / 12;
+            const totalMonths = term * 12;
+
+            let monthlyPayment = 0;
+            if (monthlyRate === 0) {
+                monthlyPayment = principal / totalMonths;
+            } else {
+                monthlyPayment = (principal * monthlyRate * Math.pow(1 + monthlyRate, totalMonths)) / (Math.pow(1 + monthlyRate, totalMonths) - 1);
+            }
+
+            resultVal.textContent = "₹" + Math.round(monthlyPayment).toLocaleString();
+        }
+
+        // Attach listeners
+        [priceRange, downRange, rateRange, termRange].forEach(range => {
+            if (range) {
+                range.addEventListener("input", calculateMortgage);
+            }
+        });
+
+        // Trigger initial calculations
+        calculateMortgage();
+    });
+    </script>
+
+    <!-- Property Filter Controller Script -->
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const filterBtns = document.querySelectorAll("#prop-filter-tabs .filter-btn");
+        const cards = document.querySelectorAll(".property-card-item");
+        const countSpan = document.getElementById("visible-prop-count");
+
+        function applyFilter(filter) {
+            let visibleCount = 0;
+            cards.forEach(card => {
+                const category = card.getAttribute("data-category");
+                if (filter === "all" || category === filter) {
+                    card.style.display = "";
+                    visibleCount++;
+                } else {
+                    card.style.display = "none";
+                }
+            });
+            if (countSpan) countSpan.textContent = visibleCount;
+        }
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                const filter = btn.getAttribute("data-filter");
+
+                // Update active button
+                filterBtns.forEach(b => {
+                    b.classList.remove("bg-brandRed", "text-white");
+                    b.classList.add("bg-white", "text-luxuryDark", "border", "border-luxuryBorder");
+                });
+                btn.classList.add("bg-brandRed", "text-white");
+                btn.classList.remove("bg-white", "text-luxuryDark", "border", "border-luxuryBorder");
+
+                applyFilter(filter);
+            });
+        });
+
+        // Deep-link filter support via query params (e.g. ?type=plots, ?type=villas, ?type=apartments)
+        const urlParams = new URLSearchParams(window.location.search);
+        let targetType = urlParams.get('type') || urlParams.get('filter') || urlParams.get('category');
+        if (targetType) {
+            targetType = targetType.toLowerCase();
+            if (targetType === 'plots' || targetType === 'plot') targetType = 'villas';
+            if (targetType === 'farmlands') targetType = 'farmland';
+            const matchedBtn = Array.from(filterBtns).find(b => b.getAttribute('data-filter') === targetType);
+            if (matchedBtn) {
+                matchedBtn.click();
+            }
+        }
+    });
+    </script>
+
+</body>
+</html>

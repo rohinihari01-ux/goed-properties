@@ -1,0 +1,1224 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="lenis-smooth">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KBH658HC');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PropTech Advisory & Real Estate Services | Goed Properties Chennai</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/icons/header-logo.svg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="
+        param($m)
+        $sub = $m.Groups[1].Value
+        if ([string]::IsNullOrWhiteSpace($sub)) {
+            return "index.html"
+        } else {
+            return "$sub.html"
+        }
+    ">
+    <meta name="robots" content="index, follow">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Explore advanced tech-driven real estate advisory services by Goed Properties in Chennai. 30-year algorithmic title audits, GIS mapping, land parcels, luxury villas, e-auctions, and institutional investments.">
+    <meta name="keywords" content="Real Estate Services Chennai, PropTech Advisory, Land Parcel Verification, Farmland Chennai, Bank E-Auction Chennai, Luxury Real Estate Services, TNRERA Title Audit">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PropTech Advisory & Real Estate Services | Goed Properties">
+    <meta property="og:description" content="Tech-driven real estate services: algorithmic legal verification, GIS spatial mapping, high-yield land acquisition, and discrete luxury property advisory in Chennai.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&h=630&q=80">
+    <meta property="og:url" content="
+        param($m)
+        $sub = $m.Groups[1].Value
+        if ([string]::IsNullOrWhiteSpace($sub)) {
+            return "index.html"
+        } else {
+            return "$sub.html"
+        }
+    ">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PropTech Advisory & Real Estate Services | Goed Properties">
+    <meta name="twitter:description" content="Discover tech-enabled property advisory, algorithmic title audits, and high-value real estate acquisition across Chennai.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&h=630&q=80">
+
+    <!-- Stylesheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    
+    <!-- Custom Style Assets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+
+    <!-- Tailwind Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brandRed: '#C8102E',
+              brandRedDark: '#A30B22',
+              brandRedLight: '#FDF2F4',
+              brandRedSubtle: '#FCE7EB',
+              luxuryDark: '#111827',
+              luxurySlate: '#F8FAFC',
+              luxuryGray: '#64748B',
+              luxuryBorder: '#E2E8F0',
+            },
+            fontFamily: {
+              playfair: ['"Playfair Display"', 'serif'],
+              inter: ['Inter', 'sans-serif'],
+              mono: ['"JetBrains Mono"', 'monospace'],
+            },
+            borderRadius: {
+              'luxury': '20px',
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+        /* Light Tech Grid & Red Gradient Accents */
+        .tech-light-grid {
+            background-color: #F8FAFC;
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(200, 16, 46, 0.08) 0%, transparent 65%),
+                linear-gradient(to right, rgba(200, 16, 46, 0.035) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(200, 16, 46, 0.035) 1px, transparent 1px);
+            background-size: 100% 100%, 40px 40px, 40px 40px;
+        }
+
+        .tech-card-light {
+            position: relative;
+            background: #ffffff;
+            border: 1px solid #E2E8F0;
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .tech-card-light:hover {
+            border-color: rgba(200, 16, 46, 0.4);
+            box-shadow: 0 20px 35px -10px rgba(200, 16, 46, 0.12), 0 4px 6px -2px rgba(15, 23, 42, 0.05);
+            transform: translateY(-4px);
+        }
+
+        .tech-card-light::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #C8102E, #EF4444, #C8102E);
+            opacity: 0;
+            transition: opacity 0.35s ease;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+
+        .tech-card-light:hover::before {
+            opacity: 1;
+        }
+
+        .corner-tag-light {
+            position: relative;
+        }
+        .corner-tag-light::after {
+            content: '';
+            position: absolute;
+            top: -1px;
+            right: -1px;
+            width: 8px;
+            height: 8px;
+            border-top: 2px solid #C8102E;
+            border-right: 2px solid #C8102E;
+        }
+
+        .filter-btn-light.active {
+            background-color: #C8102E;
+            color: #ffffff;
+            border-color: #C8102E;
+            box-shadow: 0 4px 14px rgba(200, 16, 46, 0.3);
+        }
+
+        /* Pulse radar indicator */
+        @keyframes pulse-radar-light {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(200, 16, 46, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(200, 16, 46, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(200, 16, 46, 0); }
+        }
+        .pulse-radar-red {
+            animation: pulse-radar-light 2s infinite;
+        }
+
+        /* Red Theme Section Pill Badge (Matches Image Design) */
+        .red-pill-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.625rem;
+            padding: 0.35rem 1.15rem;
+            background-color: #FFF5F6;
+            border: 1px solid rgba(200, 16, 46, 0.22);
+            border-radius: 9999px;
+            font-size: 0.8125rem; /* 13px */
+            font-weight: 600;
+            color: #C8102E;
+            letter-spacing: -0.01em;
+            box-shadow: 0 1px 3px rgba(200, 16, 46, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .red-pill-badge:hover {
+            background-color: #FEECEF;
+            border-color: rgba(200, 16, 46, 0.4);
+            box-shadow: 0 2px 8px rgba(200, 16, 46, 0.12);
+            transform: translateY(-1px);
+        }
+
+        .red-pill-badge .badge-dot {
+            width: 0.625rem; /* 10px */
+            height: 0.625rem;
+            border-radius: 9999px;
+            background-color: #C8102E;
+            box-shadow: 0 0 8px rgba(200, 16, 46, 0.6);
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body class="bg-luxurySlate text-slate-800 font-inter antialiased selection:bg-brandRed selection:text-white">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBH658HC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Preloader Screen -->
+    <div id="preloader">
+        <div class="flex flex-col items-center space-y-4">
+            <div class="loader-ring" aria-label="Loading Goed Properties"></div>
+            <span class="text-brand-gradient font-playfair tracking-widest text-xs uppercase font-semibold">Goed Properties</span>
+        </div>
+    </div>
+
+    <!-- Header / Navbar Element -->
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-white/95 backdrop-blur-md py-4 px-6 md:px-12 border-b border-slate-200/80 shadow-sm">
+        <div id="header-placeholder"></div>
+    </header>
+
+    <main class="pt-24">
+        <!-- =================================================================
+             ADVANCED TECH HERO BANNER (LIGHT + RED)
+             ================================================================= -->
+        <section class="relative min-h-[540px] tech-light-grid overflow-hidden flex items-center justify-center py-20 px-6 border-b border-slate-200">
+            <!-- Subtle Radial Red Glow Elements -->
+            <div class="absolute -top-36 left-1/2 -translate-x-1/2 w-[750px] h-[360px] bg-red-100/70 rounded-full blur-[100px] pointer-events-none"></div>
+            <div class="absolute bottom-0 right-10 w-80 h-80 bg-red-50 rounded-full blur-[80px] pointer-events-none"></div>
+
+            <div class="relative z-10 text-center space-y-6 max-w-5xl mx-auto">
+                <!-- Red Pill Section Badge (Matches Image Design) -->
+                <div class="red-pill-badge" data-aos="fade-down">
+                    <span class="badge-dot pulse-radar-red"></span>
+                    <span>Chennai's Most Trusted PropTech &amp; Real Estate Advisors</span>
+                </div>
+
+                <!-- Main Headline -->
+                <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight font-playfair leading-[1.1] text-slate-900" data-aos="fade-up">
+                    Next-Gen Real Estate <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandRed via-red-600 to-slate-900">Precision Services</span>
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="text-slate-600 text-xs sm:text-sm md:text-base font-light max-w-2xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+                    Combining 15+ years of trusted Chennai real estate intelligence with algorithmic title verification, GIS spatial mapping, bank auction data, and institutional-grade property acquisition.
+                </p>
+
+                <!-- Tech Stats HUD Strip (Light + Red) -->
+                <div class="pt-4 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm text-left hover:border-red-300 transition-colors">
+                        <span class="block text-[11px] font-mono uppercase text-brandRed font-bold tracking-wider">Title Accuracy</span>
+                        <div class="text-2xl md:text-3xl font-bold font-mono text-slate-900 mt-1">99.8%</div>
+                        <span class="text-[11px] text-slate-500 mt-0.5 block">30-Yr Lineage Check</span>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm text-left hover:border-red-300 transition-colors">
+                        <span class="block text-[11px] font-mono uppercase text-brandRed font-bold tracking-wider">Portfolio Valued</span>
+                        <div class="text-2xl md:text-3xl font-bold font-mono text-slate-900 mt-1">&#8377;500Cr+</div>
+                        <span class="text-[11px] text-slate-500 mt-0.5 block">High-Value Assets</span>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm text-left hover:border-red-300 transition-colors">
+                        <span class="block text-[11px] font-mono uppercase text-brandRed font-bold tracking-wider">Advisory Record</span>
+                        <div class="text-2xl md:text-3xl font-bold font-mono text-slate-900 mt-1">15+ Yrs</div>
+                        <span class="text-[11px] text-slate-500 mt-0.5 block">Chennai Metro Focus</span>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm text-left hover:border-red-300 transition-colors">
+                        <span class="block text-[11px] font-mono uppercase text-brandRed font-bold tracking-wider">RERA Verified</span>
+                        <div class="text-2xl md:text-3xl font-bold font-mono text-slate-900 mt-1">100%</div>
+                        <span class="text-[11px] text-slate-500 mt-0.5 block">TNRERA Compliance</span>
+                    </div>
+                </div>
+
+                <!-- Fast Action Anchors -->
+                <div class="pt-4 flex flex-wrap items-center justify-center gap-4 text-xs font-semibold" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#services-grid" class="btn-brand-gradient text-white py-3.5 px-8 rounded-luxury uppercase tracking-widest text-[11px] shadow-lg shadow-brandRed/25 hover:shadow-brandRed/40 transition-all flex items-center gap-2">
+                        <span>Explore Capabilities</span>
+                        <i class="fa-solid fa-arrow-down text-[10px]"></i>
+                    </a>
+                    <a href="#tech-workflow" class="py-3.5 px-7 rounded-luxury uppercase tracking-widest text-[11px] bg-white hover:bg-red-50 border border-slate-300 text-slate-800 hover:border-brandRed hover:text-brandRed transition-all flex items-center gap-2 shadow-sm">
+                        <span>Our Verification Engine</span>
+                        <i class="fa-solid fa-microchip text-[11px] text-brandRed"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================================
+             INTERACTIVE FILTER BAR (LIGHT + RED)
+             ================================================================= -->
+        <section class="sticky top-20 z-30 bg-white/95 backdrop-blur-xl border-b border-slate-200 py-4 px-6 shadow-sm">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-2 text-xs font-mono text-slate-600 font-semibold">
+                    <i class="fa-solid fa-filter text-brandRed"></i>
+                    <span>FILTER SERVICE DOMAIN:</span>
+                </div>
+                <div class="flex flex-wrap items-center justify-center gap-2" id="filter-container">
+                    <button type="button" class="filter-btn-light active px-4 py-2 rounded-full text-xs font-semibold border border-slate-200 bg-white text-slate-700 hover:border-brandRed hover:text-brandRed transition-all duration-300" data-filter="all">
+                        All Domains (9)
+                    </button>
+                    <button type="button" class="filter-btn-light px-4 py-2 rounded-full text-xs font-semibold border border-slate-200 bg-white text-slate-700 hover:border-brandRed hover:text-brandRed transition-all duration-300" data-filter="land">
+                        Land &amp; Farmland
+                    </button>
+                    <button type="button" class="filter-btn-light px-4 py-2 rounded-full text-xs font-semibold border border-slate-200 bg-white text-slate-700 hover:border-brandRed hover:text-brandRed transition-all duration-300" data-filter="residential">
+                        Residential &amp; Luxury
+                    </button>
+                    <button type="button" class="filter-btn-light px-4 py-2 rounded-full text-xs font-semibold border border-slate-200 bg-white text-slate-700 hover:border-brandRed hover:text-brandRed transition-all duration-300" data-filter="commercial">
+                        Commercial &amp; Logistics
+                    </button>
+                    <button type="button" class="filter-btn-light px-4 py-2 rounded-full text-xs font-semibold border border-slate-200 bg-white text-slate-700 hover:border-brandRed hover:text-brandRed transition-all duration-300" data-filter="advisory">
+                        Advisory &amp; Legal
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================================
+             ADVANCED TECH SERVICES GRID (LIGHT + RED CARDS)
+             ================================================================= -->
+        <section id="services-grid" class="py-20 px-6 md:px-12 max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <div class="red-pill-badge" data-aos="fade-up">
+                    <span class="badge-dot"></span>
+                    <span>Full-Spectrum Property Advisory &amp; Legal Verification</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold font-playfair text-slate-900">
+                    Engineered Real Estate Solutions
+                </h2>
+                <p class="text-slate-600 text-xs sm:text-sm font-light">
+                    Every service is backed by proprietary title registries, verified cadastral maps, and direct promoter-level transparency.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7" id="services-cards-grid">
+                
+                <!-- Service 1: Residential Plots & Land Parcels -->
+                <div class="service-card tech-card-light corner-tag-light rounded-2xl p-7 flex flex-col justify-between" data-category="land" data-aos="fade-up">
+                    <div class="space-y-5">
+                        <div class="flex items-center justify-between">
+                            <span class="font-mono text-[10px] text-brandRed font-bold tracking-widest bg-red-50 px-2.5 py-1 rounded border border-red-200">
+                                [SYS-01] // LANDTECH
+                            </span>
+                            <div class="w-12 h-12 rounded-xl bg-red-50 border border-red-100 flex items-center justify-center text-brandRed text-xl shadow-sm">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h3 class="text-xl font-bold font-playfair text-slate-900">Residential Plots &amp; Land Parcels</h3>
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed font-light">
+                                High-growth vacant land acquisitions in Chennai's emerging economic hubs. Backed by Cadastral GIS coordinate surveys and rapid CMDA/DTCP title checks.
+                            </p>
+                        </div>
+
+                        <div class="pt-2 space-y-2 border-t border-slate-100">
+                            <div class="flex items-center gap-2 text-xs text-slate-700">
+                                <i class="fa-solid fa-check text-brandRed text-[11px]"></i>
+                                <span>Cadastral GIS Boundary Mapping</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-700">
+                                <i class="fa-solid fa-check text-brandRed text-[11px]"></i>
+                                <span>CMDA &amp; DTCP Layout Approvals</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-700">
+                                <i class="fa-solid fa-check text-brandRed text-[11px]"></i>
+                                <span>Patta, Chitta &amp; FMB Verification</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between">
+                        <span class="text-[11px] font-mono text-slate-400 font-medium">READY FOR CONSTRUCTION</span>
+                        <button type="button" onclick="openTechModal('Residential Plots & Land Parcels')" class="text-xs font-bold text-brandRed hover:text-brandRedDark inline-flex items-center gap-1.5 transition-colors">
+                            <span>Deploy Request</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 2: Farmland & Agri-Assets -->
+                <div class="service-card tech-card-light corner-tag-light rounded-2xl p-7 flex flex-col justify-between" data-category="land" data-aos="fade-up" data-aos-delay="100">
+                    <div class="space-y-5">
+                        <div class="flex items-center justify-between">
+                            <span class="font-mono text-[10px] text-brandRed font-bold tracking-widest bg-red-50 px-2.5 py-1 rounded border border-red-200">
+                                [SYS-02] // AGRI-TECH
+                            </span>
+                            <div class="w-12 h-12 rounded-xl bg-red-50 border border-red-100 flex items-center justify-center text-brandRed text-xl shadow-sm">
+                                <i class="fa-solid fa-seedling"></i>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h3 class="text-xl font-bold font-playfair text-slate-900">Farmland &amp; Agri-Retreats</h3>
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed font-light">
+                                Strategic fertile agricultural land parcels and organic retreat plots across Tamil Nadu, assessed for subterranean water yield, road frontage, and legal clear title.
+                            </p>
+                        </div>
+
+                        <div class="pt-2 space-y-2 border-t border-slate-100">
+                            <div class="flex items-center gap-2 text-xs text-slate-700">
+                                <i class="fa-solid fa-check text-brandRed text-[11px]"></i>
+                                <span>Subterranean Hydro-Yield Audit</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-700">
+                                <i class="fa-solid fa-check text-brandRed text-[11px]"></i>
+                                <span>Perimeter Survey &amp; Drone Analysis</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-700">
+                                <i class="fa-solid fa-check text-brandRed text-[11px]"></i>
+                                <span>High-Yield Farmhouse Planning</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between">
+                        <span class="text-[11px] font-mono text-slate-400 font-medium">TAMIL NADU GREENBELT</span>
+                        <button type="button" onclick="openTechModal('Farmland & Agri-Retreats')" class="text-xs font-bold text-brandRed hover:text-brandRedDark inline-flex items-center gap-1.5 transition-colors">
+                            <span>Deploy Request</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 3: Villas & Independent Houses -->
+                <div class="service-card tech-card-light corner-tag-light rounded-2xl p-7 flex flex-col justify-between" data-category="residential" data-aos="fade-up" data-aos-delay="200">
+                    <div class="space-y-5">
+                        <div class="flex items-center justify-between">
+                            <span class="font-mono text-[10px] text-brandRed font-bold tracking-widest bg-red-50 px-2.5 py-1 rounded border border-red-200">
+                                [SYS-03] // ARCH-LUX
+                            </span>
+                            <div class="w-12 h-12 rounded-xl bg-red-50 border border-red-100 flex items-center justify-center text-brandRed text-xl shadow-sm">
+                                <i class="fa-solid fa-house-chimney-window"></i>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h3 class="text-xl font-bold font-playfair text-slate-900">Villas &amp; Independent Mansions</h3>
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed font-light">
+                                Bespoke standalone architectural residences and gated enclave villas in Anna Nagar, ECR, and OMR. Thoroughly scrutinized for structural blueprints and planning sanctions.
+                            </p>
+                        </div>
+
+                        <div class="pt-2 space-y-2 border-t border-slate-100">
+                            <div class="flex items-center gap-2 text-xs text-slate-700">
+                                <i class="fa-solid fa-check text-brandRed text-[11px]"></i>
+                                <span>Structural Blueprint Audit</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-700">
+                                <i class="fa-solid fa-check text-brandRed text-[11px]"></i>
+                                <span>Sanctioned Plan Conformance</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-700">
+                                <i class="fa-solid fa-check text-brandRed text-[11px]"></i>
+                                <span>Turnkey Finishing &amp; Handover</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between">
+                        <span class="text-[11px] font-mono text-slate-400 font-medium">PRIME ENCLAVES</span>
+                        <button type="button" onclick="openTechModal('Villas & Independent Houses')" class="text-xs font-bold text-brandRed hover:text-brandRedDark inline-flex items-center gap-1.5 transition-colors">
+                            <span>Deploy Request</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 4: Bank E-Auction Properties -->
+                <div class="service-card tech-card-light corner-tag-light rounded-2xl p-7 flex flex-col justify-between" data-category="advisory" data-aos="fade-up">
+                    <div class="space-y-5">
+                        <div class="flex items-center justify-between">
+                            <span class="font-mono text-[10px] text-brandRed font-bold tracking-widest bg-red-50 px-2.5 py-1 rounded border border-red-200">
+                                [SYS-04] // AUCTION-INTEL
+                            </span>
+                            <div class="w-12 h-12 rounded-xl bg-red-50 border border-red-100 flex items-center justify-center text-brandRed text-xl shadow-sm">
+                                <i class="fa-solid fa-gavel"></i>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h3 class="text-xl font-bold font-playfair text-slate-900">Bank E-Auction Properties</h3>
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed font-light">
+                                Proprietary intelligence on SARFAESI foreclosed and institutional auction assets. We navigate title risk, evaluate SARFAESI Section 13(4) notices, and ensure encumbrance-free bidding.
+                            </p>
+                        </div>
+
+                        <div class="pt-2 space-y-2 border-t border-slate-100">
+                            <div class="flex items-center gap-2 text-xs text-slate-700">
+                                <i class="fa-solid fa-check text-brandRed text-[11px]"></i>
+                                <span>SARFAESI &amp; DRT Lineage Search</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-700">
+                                <i class="fa-solid fa-check text-brandRed text-[11px]"></i>
+                                <span>Discount Valuation Modeling</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-700">
+                                <i class="fa-solid fa-check text-brandRed text-[11px]"></i>
+                                <span>Physical Possession Liaison</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between">
+                        <span class="text-[11px] font-mono text-slate-400 font-medium">DISTRESSED VALUE ASSETS</span>
+                        <button type="button" onclick="openTechModal('Bank E-Auction Properties')" class="text-xs font-bold text-brandRed hover:text-brandRedDark inline-flex items-center gap-1.5 transition-colors">
+                            <span>Deploy Request</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 5: Apartments & Gated Communities -->
+                <div class="service-card tech-card-light corner-tag-light rounded-2xl p-7 flex flex-col justify-between" data-category="residential" data-aos="fade-up" data-aos-delay="100">
+                    <div class="space-y-5">
+                        <div class="flex items-center justify-between">
+                            <span class="font-mono text-[10px] text-brandRed font-bold tracking-widest bg-red-50 px-2.5 py-1 rounded border border-red-200">
+                                [SYS-05] // COMM-TOWER
+                            </span>
+                            <div class="w-12 h-12 rounded-xl bg-red-50 border border-red-100 flex items-center justify-center text-brandRed text-xl shadow-sm">
+                                <i class="fa-solid fa-city"></i>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h3 class="text-xl font-bold font-playfair text-slate-900">Apartments &amp; Integrated Townships</h3>
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed font-light">
+                                Verified high-rise residences and gated developments by leading tier-1 builders (Shriram, Prestige, TVS, Godrej). Includes complete UDS and CC/OC audit.
+                            </p>
+                        </div>
+
+                        <div class="pt-2 space-y-2 border-t border-slate-100">
+                            <div class="flex items-center gap-2 text-xs text-slate-700">
+                                <i class="fa-solid fa-check text-brandRed text-[11px]"></i>
+                                <span>Undivided Share (UDS) Mathematical Audit</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-700">
+                                <i class="fa-solid fa-check text-brandRed text-[11px]"></i>
+                                <span>Completion (CC) &amp; Occupancy (OC) Review</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-700">
+                                <i class="fa-solid fa-check text-brandRed text-[11px]"></i>
+                                <span>Pre-Launch &amp; Direct Builder Pricing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between">
+                        <span class="text-[11px] font-mono text-slate-400 font-medium">TIER-1 PROMOTERS ONLY</span>
+                        <button type="button" onclick="openTechModal('Apartments & Integrated Townships')" class="text-xs font-bold text-brandRed hover:text-brandRedDark inline-flex items-center gap-1.5 transition-colors">
+                            <span>Deploy Request</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 6: Premium & Ultra-Luxury Properties -->
+                <div class="service-card tech-card-light corner-tag-light rounded-2xl p-7 flex flex-col justify-between" data-category="residential" data-aos="fade-up" data-aos-delay="200">
+                    <div class="space-y-5">
+                        <div class="flex items-center justify-between">
+                            <span class="font-mono text-[10px] text-brandRed font-bold tracking-widest bg-red-50 px-2.5 py-1 rounded border border-red-200">
+                                [SYS-06] // TROPHY-ASSET
+                            </span>
+                            <div class="w-12 h-12 rounded-xl bg-red-50 border border-red-100 flex items-center justify-center text-brandRed text-xl shadow-sm">
+                                <i class="fa-solid fa-gem"></i>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h3 class="text-xl font-bold font-playfair text-slate-900">Premium &amp; Luxury Estates</h3>
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed font-light">
+                                Off-market trophy residences, beachside estates, and penthouses. Handled through strict Non-Disclosure Agreements (NDA) with discrete institutional diligence.
+                            </p>
+                        </div>
+
+                        <div class="pt-2 space-y-2 border-t border-slate-100">
+                            <div class="flex items-center gap-2 text-xs text-slate-700">
+                                <i class="fa-solid fa-check text-brandRed text-[11px]"></i>
+                                <span>Strict Confidentiality / NDA Protocol</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-700">
+                                <i class="fa-solid fa-check text-brandRed text-[11px]"></i>
+                                <span>Bespoke Waterfront &amp; ECR Scouting</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-700">
+                                <i class="fa-solid fa-check text-brandRed text-[11px]"></i>
+                                <span>Private High-Net-Worth Advisory</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between">
+                        <span class="text-[11px] font-mono text-slate-400 font-medium">DISCRETE PORTFOLIO</span>
+                        <button type="button" onclick="openTechModal('Premium & Luxury Estates')" class="text-xs font-bold text-brandRed hover:text-brandRedDark inline-flex items-center gap-1.5 transition-colors">
+                            <span>Deploy Request</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 7: Real Estate Investment Advisory -->
+                <div class="service-card tech-card-light corner-tag-light rounded-2xl p-7 flex flex-col justify-between" data-category="advisory" data-aos="fade-up">
+                    <div class="space-y-5">
+                        <div class="flex items-center justify-between">
+                            <span class="font-mono text-[10px] text-brandRed font-bold tracking-widest bg-red-50 px-2.5 py-1 rounded border border-red-200">
+                                [SYS-07] // CAPITAL-GROWTH
+                            </span>
+                            <div class="w-12 h-12 rounded-xl bg-red-50 border border-red-100 flex items-center justify-center text-brandRed text-xl shadow-sm">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h3 class="text-xl font-bold font-playfair text-slate-900">Real Estate Investment Advisory</h3>
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed font-light">
+                                Data-driven capital appreciation mapping for investors, NRIs, and family offices. We analyze micro-market yields, infrastructure milestones, and IRR exit strategies.
+                            </p>
+                        </div>
+
+                        <div class="pt-2 space-y-2 border-t border-slate-100">
+                            <div class="flex items-center gap-2 text-xs text-slate-700">
+                                <i class="fa-solid fa-check text-brandRed text-[11px]"></i>
+                                <span>Infrastructure Impact Projections</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-700">
+                                <i class="fa-solid fa-check text-brandRed text-[11px]"></i>
+                                <span>Rental Yield &amp; Cash Flow Modeling</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-700">
+                                <i class="fa-solid fa-check text-brandRed text-[11px]"></i>
+                                <span>NRI Estate Management &amp; Repatriation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between">
+                        <span class="text-[11px] font-mono text-slate-400 font-medium">MAXIMIZE CAPITAL IRR</span>
+                        <button type="button" onclick="openTechModal('Real Estate Investment Advisory')" class="text-xs font-bold text-brandRed hover:text-brandRedDark inline-flex items-center gap-1.5 transition-colors">
+                            <span>Deploy Request</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 8: Warehouses & Industrial Logistics -->
+                <div class="service-card tech-card-light corner-tag-light rounded-2xl p-7 flex flex-col justify-between" data-category="commercial" data-aos="fade-up" data-aos-delay="100">
+                    <div class="space-y-5">
+                        <div class="flex items-center justify-between">
+                            <span class="font-mono text-[10px] text-brandRed font-bold tracking-widest bg-red-50 px-2.5 py-1 rounded border border-red-200">
+                                [SYS-08] // LOGI-TECH
+                            </span>
+                            <div class="w-12 h-12 rounded-xl bg-red-50 border border-red-100 flex items-center justify-center text-brandRed text-xl shadow-sm">
+                                <i class="fa-solid fa-warehouse"></i>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h3 class="text-xl font-bold font-playfair text-slate-900">Warehouses &amp; Logistics Hubs</h3>
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed font-light">
+                                Strategically mapped commercial and industrial zones near NH48, Bangalore Highway, Oragadam, and Chennai freight corridors. Evaluated for turning radius and HT power lines.
+                            </p>
+                        </div>
+
+                        <div class="pt-2 space-y-2 border-t border-slate-100">
+                            <div class="flex items-center gap-2 text-xs text-slate-700">
+                                <i class="fa-solid fa-check text-brandRed text-[11px]"></i>
+                                <span>Highway Freight Corridors (NH48 / ORR)</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-700">
+                                <i class="fa-solid fa-check text-brandRed text-[11px]"></i>
+                                <span>Floor-Load &amp; Clear Height Audits</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-700">
+                                <i class="fa-solid fa-check text-brandRed text-[11px]"></i>
+                                <span>SIPCOT &amp; Industrial Zoning Clearances</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between">
+                        <span class="text-[11px] font-mono text-slate-400 font-medium">INDUSTRIAL FREIGHT ZONES</span>
+                        <button type="button" onclick="openTechModal('Warehouses & Logistics Hubs')" class="text-xs font-bold text-brandRed hover:text-brandRedDark inline-flex items-center gap-1.5 transition-colors">
+                            <span>Deploy Request</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 9: End-to-End Legal Due Diligence -->
+                <div class="service-card tech-card-light corner-tag-light rounded-2xl p-7 flex flex-col justify-between" data-category="advisory" data-aos="fade-up" data-aos-delay="200">
+                    <div class="space-y-5">
+                        <div class="flex items-center justify-between">
+                            <span class="font-mono text-[10px] text-brandRed font-bold tracking-widest bg-red-50 px-2.5 py-1 rounded border border-red-200">
+                                [SYS-09] // LEGAL-AUDIT
+                            </span>
+                            <div class="w-12 h-12 rounded-xl bg-red-50 border border-red-100 flex items-center justify-center text-brandRed text-xl shadow-sm">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h3 class="text-xl font-bold font-playfair text-slate-900">Title Verification &amp; Conveyance</h3>
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed font-light">
+                                Bulletproof 30-year mother deed audit, computerized encumbrance certificate (EC) check, legal vetting by Senior Advocates, and hassle-free Sub-Registrar registration.
+                            </p>
+                        </div>
+
+                        <div class="pt-2 space-y-2 border-t border-slate-100">
+                            <div class="flex items-center gap-2 text-xs text-slate-700">
+                                <i class="fa-solid fa-check text-brandRed text-[11px]"></i>
+                                <span>30-Year Chain of Title Verification</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-700">
+                                <i class="fa-solid fa-check text-brandRed text-[11px]"></i>
+                                <span>Sub-Registrar Office (SRO) Escort</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-700">
+                                <i class="fa-solid fa-check text-brandRed text-[11px]"></i>
+                                <span>Clean Title Indemnity Scrutiny</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between">
+                        <span class="text-[11px] font-mono text-slate-400 font-medium">100% LEGAL SAFETY</span>
+                        <button type="button" onclick="openTechModal('Title Verification & Conveyance')" class="text-xs font-bold text-brandRed hover:text-brandRedDark inline-flex items-center gap-1.5 transition-colors">
+                            <span>Deploy Request</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =================================================================
+             ADVANCED 4-PHASE TECH PRECISION PIPELINE (LIGHT + RED)
+             ================================================================= -->
+        <section id="tech-workflow" class="py-24 bg-white border-y border-slate-200 px-6 md:px-12 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                    <div class="red-pill-badge" data-aos="fade-up">
+                        <span class="badge-dot"></span>
+                        <span>Systematic 4-Phase Advisory Protocol</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold font-playfair text-slate-900">
+                        The Goed 4-Phase Advisory Pipeline
+                    </h2>
+                    <p class="text-slate-600 text-xs sm:text-sm font-light">
+                        Our systematic methodology ensures every sq.ft you acquire is legally safe, physically mapped, and value-optimized.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+                    
+                    <!-- Phase 1 -->
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 relative hover:border-brandRed hover:bg-white hover:shadow-xl transition-all duration-300" data-aos="fade-up">
+                        <div class="w-10 h-10 rounded-full bg-red-100 text-brandRed font-mono text-sm font-bold flex items-center justify-center mb-4">
+                            01
+                        </div>
+                        <h3 class="text-lg font-bold font-playfair text-slate-900 mb-2">Algorithmic Title Audit</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed font-light mb-4">
+                            We pull 30-year computerized ECs, verify patta/chitta records on Tamil Nilam portal, and cross-reference TNRERA registration.
+                        </p>
+                        <div class="pt-3 border-t border-slate-200 font-mono text-[11px] text-brandRed font-semibold">
+                            &gt; Zero Encumbrance Check
+                        </div>
+                    </div>
+
+                    <!-- Phase 2 -->
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 relative hover:border-brandRed hover:bg-white hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-10 h-10 rounded-full bg-red-100 text-brandRed font-mono text-sm font-bold flex items-center justify-center mb-4">
+                            02
+                        </div>
+                        <h3 class="text-lg font-bold font-playfair text-slate-900 mb-2">Geospatial Due Diligence</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed font-light mb-4">
+                            Physical site boundary alignment via FMB maps, master plan zoning compliance check (CMDA 2026 guidelines), and drone surveys.
+                        </p>
+                        <div class="pt-3 border-t border-slate-200 font-mono text-[11px] text-brandRed font-semibold">
+                            &gt; GIS Cadastral Lock
+                        </div>
+                    </div>
+
+                    <!-- Phase 3 -->
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 relative hover:border-brandRed hover:bg-white hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-10 h-10 rounded-full bg-red-100 text-brandRed font-mono text-sm font-bold flex items-center justify-center mb-4">
+                            03
+                        </div>
+                        <h3 class="text-lg font-bold font-playfair text-slate-900 mb-2">Financial &amp; Yield Modeling</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed font-light mb-4">
+                            Valuation analysis based on micro-market registration values vs. open market trendlines to secure maximum capital advantage.
+                        </p>
+                        <div class="pt-3 border-t border-slate-200 font-mono text-[11px] text-brandRed font-semibold">
+                            &gt; Optimal Price Advantage
+                        </div>
+                    </div>
+
+                    <!-- Phase 4 -->
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 relative hover:border-brandRed hover:bg-white hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-10 h-10 rounded-full bg-red-100 text-brandRed font-mono text-sm font-bold flex items-center justify-center mb-4">
+                            04
+                        </div>
+                        <h3 class="text-lg font-bold font-playfair text-slate-900 mb-2">Transparent Conveyance</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed font-light mb-4">
+                            Senior Advocate sale deed drafting, bank loan disbursement management, and physical escort at Sub-Registrar Office for registry.
+                        </p>
+                        <div class="pt-3 border-t border-slate-200 font-mono text-[11px] text-brandRed font-semibold">
+                            &gt; Certified Handover
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================================
+             INTERACTIVE PROPTECH ASSESSMENT TOOL (LIGHT + RED)
+             ================================================================= -->
+        <section class="py-20 px-6 md:px-12 max-w-5xl mx-auto">
+            <div class="p-8 sm:p-12 rounded-3xl bg-white border border-red-200/80 shadow-lg shadow-red-500/5 relative overflow-hidden" data-aos="zoom-in">
+                <div class="max-w-2xl mx-auto text-center space-y-3 mb-8">
+                    <div class="red-pill-badge" data-aos="fade-up">
+                        <span class="badge-dot"></span>
+                        <span>Tailored Real Estate Assessment Engine</span>
+                    </div>
+                    <h2 class="text-2xl sm:text-4xl font-bold font-playfair text-slate-900">Find Your Tailored Service Path</h2>
+                    <p class="text-slate-600 text-xs sm:text-sm font-light">
+                        Select your asset domain and preferred zone to immediately configure the ideal Goed advisory protocol.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div class="space-y-2">
+                        <label class="block text-xs font-mono text-slate-700 uppercase tracking-wider font-semibold">Asset Class of Interest</label>
+                        <select id="tool-asset-type" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3.5 text-xs text-slate-900 focus:outline-none focus:border-brandRed focus:bg-white transition-colors">
+                            <option value="Residential Plots">Residential Plots &amp; Land Parcels</option>
+                            <option value="Farmland & Agro-Assets">Agricultural Farmland &amp; Farmhouse Plots</option>
+                            <option value="Luxury Villas">Luxury Villas &amp; Independent Mansions</option>
+                            <option value="Apartments">Apartments &amp; Integrated Townships</option>
+                            <option value="Bank E-Auction">Bank E-Auction &amp; Distressed Properties</option>
+                            <option value="Warehouses & Logistics">Warehouses &amp; Commercial Real Estate</option>
+                        </select>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="block text-xs font-mono text-slate-700 uppercase tracking-wider font-semibold">Target Chennai Region</label>
+                        <select id="tool-region" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3.5 text-xs text-slate-900 focus:outline-none focus:border-brandRed focus:bg-white transition-colors">
+                            <option value="Anna Nagar & Central Chennai">Anna Nagar &amp; Central Chennai</option>
+                            <option value="OMR & ECR IT Corridor">OMR &amp; ECR Coast Corridor</option>
+                            <option value="Poonamallee & Thirumazhisai">Poonamallee &amp; Thirumazhisai Hub</option>
+                            <option value="Koyambedu & Metro Belt">Koyambedu &amp; Inner Ring Corridor</option>
+                            <option value="GST & Chengalpattu">GST Road &amp; Chengalpattu</option>
+                            <option value="Tamil Nadu Farmland Belt">Tamil Nadu Agro &amp; Hill Belts</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="assessment-result" class="p-6 rounded-2xl bg-red-50/60 border border-red-200 space-y-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                        <div>
+                            <span class="text-[10px] font-mono text-brandRed font-bold uppercase tracking-wider">RECOMMENDED PROTOCOL</span>
+                            <h4 id="result-title" class="text-base sm:text-lg font-bold font-playfair text-slate-900 mt-1">Full Cadastral Title Audit &amp; Land Acquisition Protocol</h4>
+                            <p id="result-desc" class="text-xs text-slate-600 font-light mt-1">
+                                Complete 30-year lineage audit, TNRERA vetting, and site escort by specialized property advisor.
+                            </p>
+                        </div>
+                        <button type="button" onclick="triggerMatchingEnquiry()" class="btn-brand-gradient text-white text-xs font-bold uppercase tracking-wider py-3.5 px-6 rounded-luxury whitespace-nowrap shadow-lg shadow-brandRed/30 hover:scale-105 transition-all">
+                            Request Intelligence Brief
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================================
+             HIGH-TECH CTA BANNER (LIGHT + RED)
+             ================================================================= -->
+        <section class="py-20 bg-gradient-to-r from-red-50 via-white to-red-50 text-slate-900 px-6 md:px-12 text-center relative overflow-hidden border-t border-slate-200">
+            <div class="max-w-4xl mx-auto space-y-6 relative z-10" data-aos="fade-up">
+                <div class="red-pill-badge" data-aos="fade-up">
+                    <span class="badge-dot pulse-radar-red"></span>
+                    <span>Direct Senior Real Estate Advisor Consultation</span>
+                </div>
+                <h2 class="text-3xl md:text-5xl font-bold font-playfair text-slate-900 leading-tight">
+                    Ready to Deploy Institutional-Grade Real Estate Due Diligence?
+                </h2>
+                <p class="text-slate-600 max-w-xl mx-auto text-xs md:text-sm font-light leading-relaxed">
+                    Connect directly with Srinivasan C. and our senior property advisory team at our Anna Nagar Corporate Office or via secure digital consultation.
+                </p>
+                <div class="pt-4 flex flex-wrap items-center justify-center gap-4">
+                    <a href="contact.html" class="btn-brand-gradient text-white text-xs font-bold uppercase tracking-widest py-4 px-9 rounded-luxury hover-lift shadow-xl shadow-brandRed/30">
+                        Book Confidential Consultation
+                    </a>
+                    <a href="https://wa.me/919941843344" target="_blank" rel="noopener noreferrer" class="py-4 px-8 rounded-luxury text-xs font-bold uppercase tracking-widest bg-[#25D366] hover:bg-[#1EBE5D] text-white transition-all flex items-center gap-2 shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <span>Instant WhatsApp Advisor</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =================================================================
+         MODULAR FOOTER COMPONENT PLACEHOLDER (With Fallback)
+         ================================================================= -->
+    <div id="footer-placeholder">
+        <!-- Static Luxury Footer -->
+        <footer class="bg-slate-50 text-[#333333] pt-20 pb-12 px-6 md:px-12 font-inter border-t border-slate-200">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-10 pb-14 border-b border-slate-200">
+                <!-- Brand & Description -->
+                <div class="space-y-6 xl:col-span-1 md:col-span-2 lg:col-span-1">
+                    <a href="index.html" class="flex items-center" aria-label="Goed Properties Home">
+                        <img src="assets/images/icons/header-logo.svg" alt="Goed Properties Logo" class="h-10 w-auto object-contain">
+                    </a>
+                    <p class="text-[#666666] text-sm leading-relaxed font-light">
+                        For over 15 years, Goed Properties has been Chennai's premier real estate consultancy, connecting buyers with legally verified residential plots, premium apartments, luxury villas, and high-value investment properties.
+                    </p>
+                    <div class="flex items-center space-x-3 pt-2">
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-[#C8102E] hover:bg-[#C8102E] hover:text-white hover:border-[#C8102E] hover:-translate-y-1 transition-all duration-300"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-[#C8102E] hover:bg-[#C8102E] hover:text-white hover:border-[#C8102E] hover:-translate-y-1 transition-all duration-300"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-[#C8102E] hover:bg-[#C8102E] hover:text-white hover:border-[#C8102E] hover:-translate-y-1 transition-all duration-300"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-[#C8102E] hover:bg-[#C8102E] hover:text-white hover:border-[#C8102E] hover:-translate-y-1 transition-all duration-300"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/919941843344" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-[#25D366] hover:bg-[#25D366] hover:text-white hover:border-[#25D366] hover:-translate-y-1 transition-all duration-300"><i class="fa-brands fa-whatsapp text-lg"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="space-y-4">
+                    <h4 class="text-sm font-bold uppercase tracking-widest text-[#C8102E] font-playfair border-b-2 border-[#C8102E]/20 pb-2 inline-block">Quick Links</h4>
+                    <ul class="space-y-2.5 text-sm text-[#666666] font-medium">
+                        <li><a href="index.html" class="hover:text-[#C8102E] transition-colors duration-300 flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-[#C8102E]/60"></i> Home</a></li>
+                        <li><a href="about.html" class="hover:text-[#C8102E] transition-colors duration-300 flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-[#C8102E]/60"></i> About Us</a></li>
+                        <li><a href="properties.html" class="hover:text-[#C8102E] transition-colors duration-300 flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-[#C8102E]/60"></i> Properties Portfolio</a></li>
+                        <li><a href="services.html" class="hover:text-[#C8102E] transition-colors duration-300 flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-[#C8102E]/60"></i> Our Services</a></li>
+                        <li><a href="contact.html" class="hover:text-[#C8102E] transition-colors duration-300 flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-[#C8102E]/60"></i> Contact Us</a></li>
+                        <li><a href="privacy-policy.html" class="hover:text-[#C8102E] transition-colors duration-300 flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-[#C8102E]/60"></i> Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Featured Projects -->
+                <div class="space-y-4">
+                    <h4 class="text-sm font-bold uppercase tracking-widest text-[#C8102E] font-playfair border-b-2 border-[#C8102E]/20 pb-2 inline-block">Featured Projects</h4>
+                    <ul class="space-y-2 text-xs text-[#666666] font-medium">
+                        <li><a href="codename-king-life.html" class="hover:text-[#C8102E] transition-colors duration-300 block truncate" title="Shriram Codename King Life - Koyambedu">Shriram Codename King Life</a></li>
+                        <li><a href="thirumazhisai-property.html" class="hover:text-[#C8102E] transition-colors duration-300 block truncate" title="Urbanrise The Next Big Thing - Thirumazhisai">Urbanrise Next Big Thing</a></li>
+                        <li><a href="dra-astra.html" class="hover:text-[#C8102E] transition-colors duration-300 block truncate">DRA Astra</a></li>
+                        <li><a href="godrej-azure.html" class="hover:text-[#C8102E] transition-colors duration-300 block truncate">Godrej Azure</a></li>
+                        <li><a href="prestige-pallavaram-gardens.html" class="hover:text-[#C8102E] transition-colors duration-300 block truncate">Prestige Pallavaram Gardens</a></li>
+                        <li><a href="prestige-palm-court.html" class="hover:text-[#C8102E] transition-colors duration-300 block truncate">Prestige Palm Court</a></li>
+                        <li><a href="purva-windermere.html" class="hover:text-[#C8102E] transition-colors duration-300 block truncate">Purva Windermere</a></li>
+                        <li><a href="radience-solitaire.html" class="hover:text-[#C8102E] transition-colors duration-300 block truncate">Radiance Solitaire</a></li>
+                        <li><a href="tvs-emerald-verde-vista.html" class="hover:text-[#C8102E] transition-colors duration-300 block truncate">TVS Emerald Verde Vista</a></li>
+                        <li><a href="urbanrise-the-world-of-joy.html" class="hover:text-[#C8102E] transition-colors duration-300 block truncate">Urbanrise World of Joy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Tools & Advisory -->
+                <div class="space-y-4">
+                    <h4 class="text-sm font-bold uppercase tracking-widest text-[#C8102E] font-playfair border-b-2 border-[#C8102E]/20 pb-2 inline-block">Tools &amp; Insights</h4>
+                    <ul class="space-y-2.5 text-sm text-[#666666] font-medium">
+                        <li><a href="investment-calculator.html" class="hover:text-[#C8102E] transition-colors duration-300 flex items-center gap-1.5"><i class="fa-solid fa-calculator text-[11px] text-[#C8102E]/60"></i> Investment Calculator</a></li>
+                        <li><a href="area-converter.html" class="hover:text-[#C8102E] transition-colors duration-300 flex items-center gap-1.5"><i class="fa-solid fa-ruler-combined text-[11px] text-[#C8102E]/60"></i> Area Converter</a></li>
+                        <li><a href="calculator.html" class="hover:text-[#C8102E] transition-colors duration-300 flex items-center gap-1.5"><i class="fa-solid fa-coins text-[11px] text-[#C8102E]/60"></i> EMI / Loan Calculator</a></li>
+                        <li><a href="contact.html" class="hover:text-[#C8102E] transition-colors duration-300 flex items-center gap-1.5"><i class="fa-solid fa-calendar-check text-[11px] text-[#C8102E]/60"></i> Book Site Visit</a></li>
+                    </ul>
+                    <div class="pt-3 border-t border-slate-200">
+                        <span class="text-[10px] uppercase font-bold tracking-widest text-[#C8102E] block mb-1">RERA Verification</span>
+                        <p class="text-[11px] text-[#666666] leading-relaxed font-light">
+                            Layouts &amp; projects registered under TNRERA. Verify at <a href="https://www.rera.tn.gov.in/" target="_blank" rel="noopener noreferrer" class="underline font-medium hover:text-[#C8102E]">rera.tn.gov.in</a>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Corporate Office -->
+                <div class="space-y-4">
+                    <h4 class="text-sm font-bold uppercase tracking-widest text-[#C8102E] font-playfair border-b-2 border-[#C8102E]/20 pb-2 inline-block">Corporate Office</h4>
+                    <ul class="space-y-3 text-xs text-[#666666] font-light">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-location-dot text-[#C8102E] mt-1 flex-shrink-0"></i>
+                            <span>No.42, 2nd Floor, Sindur shopping center, 2nd avenue, Anna Nagar, Chennai - 600040.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-phone text-[#C8102E] mt-0.5 flex-shrink-0"></i>
+                            <span class="space-y-0.5">
+                                <a href="tel:+919941843344" class="hover:text-[#C8102E] transition-colors duration-300 font-medium">+91 99418 43344</a><br>
+                                <a href="tel:+917824824301" class="hover:text-[#C8102E] transition-colors duration-300 font-medium">+91 78248 24301</a>
+                            </span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-brands fa-whatsapp text-[#25D366] mt-0.5 text-sm flex-shrink-0"></i>
+                            <a href="https://wa.me/919941843344" target="_blank" rel="noopener noreferrer" class="hover:text-[#C8102E] transition-colors duration-300 font-medium">WhatsApp Support</a>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-envelope text-[#C8102E] mt-0.5 flex-shrink-0"></i>
+                            <a href="mailto:srinivasan.c@goedproperties.in" class="hover:text-[#C8102E] transition-colors duration-300 break-all">srinivasan.c@goedproperties.in</a>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-clock text-[#C8102E] mt-0.5 flex-shrink-0"></i>
+                            <span>Mon – Sun: 10:00 AM – 6:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Newsletter Row -->
+            <div class="max-w-7xl mx-auto py-8 border-b border-slate-200 flex flex-col lg:flex-row items-center justify-between gap-6">
+                <div class="space-y-1 text-center lg:text-left">
+                    <h4 class="text-sm font-bold uppercase tracking-widest text-[#C8102E] font-playfair">Stay Ahead with Verified Property Updates</h4>
+                    <p class="text-xs text-[#666666] font-light">Subscribe to receive exclusive Chennai property launches, verified plots, and high-ROI investment alerts.</p>
+                </div>
+                <form class="flex w-full max-w-md gap-2" onsubmit="event.preventDefault(); alert('Thank you for subscribing! We will keep you updated.'); this.reset();">
+                    <input type="email" placeholder="Enter your email address" required 
+                           class="flex-1 bg-white border border-slate-300 rounded-luxury py-3 px-4 text-xs text-[#333333] placeholder-slate-400 focus:outline-none focus:border-[#C8102E] transition-colors">
+                    <button type="submit" aria-label="Subscribe" 
+                            class="bg-[#C8102E] hover:bg-[#A30B22] text-white text-xs font-semibold px-5 py-3 rounded-luxury transition-all duration-300 flex items-center gap-2 whitespace-nowrap shadow-sm hover:shadow">
+                        <span>Subscribe</span>
+                        <i class="fa-solid fa-arrow-right-long text-[11px]"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Copyright, Credits & Legal -->
+            <div class="max-w-7xl mx-auto pt-8 flex flex-col lg:flex-row items-center justify-between text-xs text-[#666666] font-light gap-6 text-center lg:text-left">
+                <p>&copy; 2026 Goed Properties. All rights reserved. 15+ years of trusted real estate advisory in Chennai.</p>
+                
+                <!-- Designed and Developed by Rankraze with Navigate Button -->
+                <div class="flex flex-wrap items-center justify-center gap-2 text-xs">
+                    <span class="text-slate-600">Designed and Developed by <a href="https://rankraze.com/" target="_blank" rel="noopener noreferrer" class="font-semibold text-slate-900 hover:text-[#C8102E] transition-colors underline decoration-dotted underline-offset-4">Rankraze</a></span>
+                    <a href="https://rankraze.com/" target="_blank" rel="noopener noreferrer" 
+                       class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#C8102E] hover:bg-[#A30B22] text-white text-[11px] font-semibold tracking-wider transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105"
+                       aria-label="Navigate to Rankraze">
+                        <span>Visit Rankraze</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                    </a>
+                </div>
+
+                <div class="flex space-x-6 justify-center">
+                    <a href="privacy-policy.html" class="hover:text-[#C8102E] transition-colors duration-300">Privacy Policy</a>
+                    <a href="privacy-policy.html#terms" class="hover:text-[#C8102E] transition-colors duration-300">Terms of Service</a>
+                    <a href="contact.html" class="hover:text-[#C8102E] transition-colors duration-300">Contact</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- =================================================================
+         INTERACTIVE TECH ENQUIRY MODAL (LIGHT + RED)
+         ================================================================= -->
+    <div id="techEnquiryModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm opacity-0 pointer-events-none transition-all duration-300" role="dialog" aria-modal="true" aria-labelledby="modalServiceTitle">
+        <div class="relative w-full max-w-lg bg-white border border-red-200 rounded-3xl p-6 sm:p-8 shadow-2xl space-y-5">
+            <button type="button" onclick="closeTechModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-800 text-xl w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center transition-colors" aria-label="Close modal">
+                &times;
+            </button>
+            <div class="space-y-2 pr-8">
+                <div class="red-pill-badge">
+                    <span class="badge-dot pulse-radar-red"></span>
+                    <span>Confidential Advisory Desk</span>
+                </div>
+                <h3 id="modalServiceTitle" class="text-xl sm:text-2xl font-bold font-playfair text-slate-900">Deploy Service Protocol</h3>
+                <p class="text-xs text-slate-600 font-light">Direct connection with Srinivasan C. &amp; Goed Properties legal desk.</p>
+            </div>
+
+            <form class="space-y-4" onsubmit="handleModalSubmit(event)">
+                <input type="hidden" id="modalServiceName" value="General Real Estate Advisory">
+                <div>
+                    <label class="block text-[11px] font-mono text-slate-700 font-semibold mb-1">Your Full Name</label>
+                    <input type="text" id="modalClientName" required placeholder="e.g. Anand Kumar" 
+                           class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-brandRed focus:bg-white transition-colors">
+                </div>
+                <div>
+                    <label class="block text-[11px] font-mono text-slate-700 font-semibold mb-1">Mobile / WhatsApp Number</label>
+                    <input type="tel" id="modalClientPhone" required placeholder="+91 99418 43344" 
+                           class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-brandRed focus:bg-white transition-colors">
+                </div>
+                <div>
+                    <label class="block text-[11px] font-mono text-slate-700 font-semibold mb-1">Target Zone / Specific Requirement</label>
+                    <textarea id="modalClientMessage" rows="3" placeholder="Describe property budget, location preference, or specific legal inquiry..." 
+                              class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-brandRed focus:bg-white transition-colors"></textarea>
+                </div>
+                <div class="pt-2">
+                    <button type="submit" class="w-full btn-brand-gradient text-xs font-bold uppercase tracking-wider py-4 rounded-xl text-white shadow-lg shadow-brandRed/30 hover:scale-[1.01] transition-transform flex items-center justify-center gap-2">
+                        <span>Submit &amp; Route to Senior Advisor</span>
+                        <i class="fa-solid fa-arrow-right text-[11px]"></i>
+                    </button>
+                </div>
+                <p class="text-[10px] text-center text-slate-500 font-mono">
+                    100% Confidential // Authorized Goed Properties Communication Channel
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Floating Action Widgets -->
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col space-y-3">
+        <!-- WhatsApp Chat Button -->
+        <a href="https://wa.me/919941843344" target="_blank" rel="noopener noreferrer" 
+           class="float-action bg-[#25D366] text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-2xl hover:scale-110 transition-transform duration-300"
+           aria-label="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        
+        <!-- Direct Telephone Button -->
+        <a href="tel:+919941843344" 
+           class="float-action-delay bg-luxuryDark text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-xl hover:scale-110 transition-transform duration-300 border border-white/10"
+           aria-label="Call Goed Properties Advisor">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        
+        <!-- Back To Top Button -->
+        <button id="back-to-top" 
+                class="bg-brandRed text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-lg hover:scale-110 transition-all duration-300"
+                aria-label="Back to Top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <!-- Script Loads -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom Controllers -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/animations.js"></script>
+
+    <!-- Services Page Tech Interactions -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            if (typeof AOS !== 'undefined') {
+                AOS.init({ duration: 800, once: true });
+            }
+
+            // Category Filtering
+            const filterBtns = document.querySelectorAll(".filter-btn-light");
+            const serviceCards = document.querySelectorAll(".service-card");
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener("click", () => {
+                    filterBtns.forEach(b => b.classList.remove("active"));
+                    btn.classList.add("active");
+
+                    const category = btn.getAttribute("data-filter");
+
+                    serviceCards.forEach(card => {
+                        const cardCat = card.getAttribute("data-category");
+                        if (category === "all" || cardCat === category) {
+                            card.style.display = "flex";
+                            card.style.opacity = "1";
+                            card.style.transform = "scale(1)";
+                        } else {
+                            card.style.display = "none";
+                        }
+                    });
+                });
+            });
+
+            // Interactive Assessment Tool
+            const assetSelect = document.getElementById("tool-asset-type");
+            const regionSelect = document.getElementById("tool-region");
+            const resultTitle = document.getElementById("result-title");
+            const resultDesc = document.getElementById("result-desc");
+
+            function updateAssessment() {
+                const asset = assetSelect.value;
+                const region = regionSelect.value;
+
+                resultTitle.textContent = `${asset} Due Diligence & Strategic Acquisition in ${region}`;
+                resultDesc.textContent = `Includes comprehensive 30-year algorithmic title check, direct promoter validation in ${region}, and free site-survey scheduling with Goed senior advisors.`;
+            }
+
+            if (assetSelect && regionSelect) {
+                assetSelect.addEventListener("change", updateAssessment);
+                regionSelect.addEventListener("change", updateAssessment);
+            }
+        });
+
+        // Modal Handlers
+        const modal = document.getElementById("techEnquiryModal");
+        const modalTitle = document.getElementById("modalServiceTitle");
+        const modalServiceName = document.getElementById("modalServiceName");
+
+        function openTechModal(serviceName) {
+            if (!modal) return;
+            modalServiceName.value = serviceName;
+            modalTitle.textContent = serviceName;
+            modal.classList.remove("opacity-0", "pointer-events-none");
+            modal.classList.add("opacity-100", "pointer-events-auto");
+        }
+
+        function closeTechModal() {
+            if (!modal) return;
+            modal.classList.add("opacity-0", "pointer-events-none");
+            modal.classList.remove("opacity-100", "pointer-events-auto");
+        }
+
+        modal?.addEventListener("click", (e) => {
+            if (e.target === modal) closeTechModal();
+        });
+
+        function triggerMatchingEnquiry() {
+            const asset = document.getElementById("tool-asset-type")?.value || "Target Real Estate";
+            const region = document.getElementById("tool-region")?.value || "Chennai";
+            openTechModal(`${asset} in ${region}`);
+        }
+
+        function handleModalSubmit(e) {
+            e.preventDefault();
+            const service = modalServiceName.value;
+            const name = document.getElementById("modalClientName").value;
+            const phone = document.getElementById("modalClientPhone").value;
+            const msg = document.getElementById("modalClientMessage").value;
+
+            // Formulate WhatsApp Link for instantaneous advisor transmission
+            const waText = encodeURIComponent(`*New PropTech Advisory Enquiry:*\n- *Service:* ${service}\n- *Client:* ${name}\n- *Phone:* ${phone}\n- *Requirement:* ${msg || 'General Due Diligence'}`);
+            window.open(`https://wa.me/919941843344?text=${waText}`, "_blank");
+            
+            closeTechModal();
+            alert("Thank you! Your inquiry has been routed to our senior advisor desk. Connecting via WhatsApp...");
+        }
+    </script>
+</body>
+</html>
